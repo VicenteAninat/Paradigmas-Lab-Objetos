@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se creó la clase StationType para representar los tipos de estaciones de metro en relacion a la clase Station.">
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se creó la clase CarType para representar los tipos de carros de metro en relacion a la clase PassengerCar.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/CarType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/CarType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +84,8 @@
       <workItem from="1717708797241" duration="1417000" />
       <workItem from="1717866534151" duration="2253000" />
       <workItem from="1717878064641" duration="760000" />
-      <workItem from="1717986537404" duration="1729000" />
+      <workItem from="1717986537404" duration="2800000" />
+      <workItem from="1718031409075" duration="5468000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -97,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717987752016</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se creó la clase CarType para representar los tipos de carros de metro en relacion a la clase PassengerCar.">
+      <option name="closed" value="true" />
+      <created>1717988719427</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717988719427</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +131,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa" />
     <MESSAGE value="Se creó la clase StationType para representar los tipos de estaciones de metro en relacion a la clase Station." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se creó la clase StationType para representar los tipos de estaciones de metro en relacion a la clase Station." />
+    <MESSAGE value="Se creó la clase CarType para representar los tipos de carros de metro en relacion a la clase PassengerCar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se creó la clase CarType para representar los tipos de carros de metro en relacion a la clase PassengerCar." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

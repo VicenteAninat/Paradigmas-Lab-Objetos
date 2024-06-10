@@ -8,7 +8,7 @@ public class Station {
 
     // Constructor
     public Station(int id, String name, StationType type, int stopTime) {
-        if (stopTime < 0) {
+        if (stopTime <= 0) {
             throw new IllegalArgumentException
                     ("El tiempo de detención debe ser un número positivo");
         } else if (!type.validType(type)) {
@@ -23,7 +23,9 @@ public class Station {
     }
 
     // Selectores
-
+    public String getName() {
+        return name;
+    }
 
     // Modificadores
 }

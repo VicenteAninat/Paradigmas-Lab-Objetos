@@ -15,7 +15,19 @@ public class Section {
     }
 
     // Selectores
+    public Station getPoint1() {
+        return point1;
+    }
+
+    public Station getPoint2() {
+        return point2;
+    }
+
     public int getDistance() {
         return distance;
+    }
+
+    public int getCost() {
+        return cost;
     }
 }
