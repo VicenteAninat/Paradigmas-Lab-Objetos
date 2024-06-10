@@ -1,6 +1,8 @@
 package org.sistemaMetro.clases;
 
-public class Driver {
+import org.sistemaMetro.Interfaces.IDriver;
+
+public class Driver implements IDriver{
     public int id;
     public String name;
     public String trainMaker;

@@ -1,6 +1,7 @@
 package org.sistemaMetro.clases;
+import org.sistemaMetro.Interfaces.IStation;
 
-public class Station {
+public class Station implements IStation{
     public int id;
     public String name;
     public StationType type;
@@ -23,6 +24,7 @@ public class Station {
     }
 
     // Selectores
+    @Override
     public String getName() {
         return name;
     }

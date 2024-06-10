@@ -2,8 +2,9 @@ package org.sistemaMetro.clases;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.sistemaMetro.Interfaces.ILine;
 
-public class Line {
+public class Line implements ILine{
     public int id;
     public String name;
     public String railType;
@@ -18,6 +19,7 @@ public class Line {
     }
 
     // Métodos
+    @Override
     public int lineLength(Line line) {
         int length = 0;
         for (Section section : line.sections) {
@@ -26,6 +28,7 @@ public class Line {
         return length;
     }
 
+    @Override
     public int lineSectionLength(Line line, String station1Name, String station2Name) {
         int length = 0;
         int index1 = 0;
@@ -49,6 +52,7 @@ public class Line {
         return length;
     }
 
+    @Override
     public int lineCost(Line line) {
         int cost = 0;
         for (Section section : line.sections) {
@@ -57,6 +61,7 @@ public class Line {
         return cost;
     }
 
+    @Override
     public int lineSectionCost(Line line, String station1Name, String station2Name) {
         int cost = 0;
         int index1 = 0;
@@ -80,10 +85,12 @@ public class Line {
         return cost;
     }
 
+    @Override
     public void lineAddSection(Line line, Section section) {
         line.sections.add(section);
     }
 
+    @Override
     public boolean isLine (Line line) {
         // some code
         return false; // Placeholder

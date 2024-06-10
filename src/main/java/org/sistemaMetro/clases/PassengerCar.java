@@ -1,6 +1,7 @@
 package org.sistemaMetro.clases;
+import org.sistemaMetro.Interfaces.IPassengerCar;
 
-public class PassengerCar {
+public class PassengerCar implements IPassengerCar{
     public int id;
     public int passengerCapacity;
     public String model;

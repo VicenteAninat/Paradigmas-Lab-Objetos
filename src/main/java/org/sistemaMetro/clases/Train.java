@@ -1,8 +1,9 @@
 package org.sistemaMetro.clases;
 
 import java.util.ArrayList;
+import org.sistemaMetro.Interfaces.ITrain;
 
-public class Train {
+public class Train implements ITrain{
     public int id;
     public String trainMaker;
     public int speed;
@@ -26,19 +27,23 @@ public class Train {
     // Modificadores
 
     // Métodos
+    @Override
     public void addCar(Train train, PassengerCar carro, int position) {
         train.carList.add(position, carro);
     }
 
+    @Override
     public void removeCar(Train train, int position) {
         train.carList.remove(position);
     }
 
+    @Override
     public boolean isTrain(Train train){
         // some code
         return true; // Placeholder
     }
 
+    @Override
     public int fetchCapacity(Train train){
         int capacity = 0;
         for (PassengerCar car : train.carList) {
