@@ -2,10 +2,10 @@ package org.sistemaMetro.clases;
 import org.sistemaMetro.Interfaces.IStation;
 
 public class Station implements IStation{
-    public int id;
-    public String name;
-    public StationType type;
-    public int stopTime;
+    private int id;
+    private String name;
+    private StationType type;
+    private int stopTime;
 
     // Constructor
     public Station(int id, String name, StationType type, int stopTime) {

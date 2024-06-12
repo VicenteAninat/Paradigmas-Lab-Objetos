@@ -1,7 +1,7 @@
 package org.sistemaMetro.clases;
 
 public class CarType {
-    public String type;
+    private String type;
 
     public CarType(String type){
         this.type = type;

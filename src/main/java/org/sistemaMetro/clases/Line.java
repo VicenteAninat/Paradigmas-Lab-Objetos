@@ -5,10 +5,10 @@ import java.util.List;
 import org.sistemaMetro.Interfaces.ILine;
 
 public class Line implements ILine{
-    public int id;
-    public String name;
-    public String railType;
-    public ArrayList<Section> sections;
+    private int id;
+    private String name;
+    private String railType;
+    private ArrayList<Section> sections;
 
     // Constructor
     public Line(int id, String name, String railType) {

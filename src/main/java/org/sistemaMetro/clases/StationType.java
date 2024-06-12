@@ -1,7 +1,7 @@
 package org.sistemaMetro.clases;
 
 public class StationType {
-    public String type;
+    private String type;
 
     public StationType(String type){
         this.type = type;

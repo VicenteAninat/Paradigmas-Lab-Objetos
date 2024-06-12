@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se añadió documentación de los métodos de la interfaz ITrain y se corrigió la documentación de las interfaces anteriores">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" afterDir="false" />
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se añadieron implementaciones de los requisitos funcionales del proyecto">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/CarType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/CarType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/StationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/StationType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" afterDir="false" />
@@ -94,7 +92,7 @@
       <workItem from="1718158592035" duration="1026000" />
       <workItem from="1718199755944" duration="7119000" />
       <workItem from="1718207718625" duration="65000" />
-      <workItem from="1718212785430" duration="2202000" />
+      <workItem from="1718212785430" duration="2678000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -144,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718159616177</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Se añadieron implementaciones de los requisitos funcionales del proyecto">
+      <option name="closed" value="true" />
+      <created>1718222188348</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718222188348</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +174,8 @@
     <MESSAGE value="Se añadieron implementaciones de algunos de los requisitos funcionales del proyecto" />
     <MESSAGE value="Se añadió documentación de los métodos de las interfaces IStation, ISection e ILine" />
     <MESSAGE value="Se añadió documentación de los métodos de la interfaz ITrain y se corrigió la documentación de las interfaces anteriores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se añadió documentación de los métodos de la interfaz ITrain y se corrigió la documentación de las interfaces anteriores" />
+    <MESSAGE value="Se añadieron implementaciones de los requisitos funcionales del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añadieron implementaciones de los requisitos funcionales del proyecto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

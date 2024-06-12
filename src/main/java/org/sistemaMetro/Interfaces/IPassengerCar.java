@@ -10,4 +10,11 @@ public interface IPassengerCar {
      * @return int del id del carro
      */
     int getId();
+
+    /**
+     * Obtiene la capacidad de pasajeros del carro
+     *
+     * @return int de la capacidad de pasajeros del carro
+     */
+    int getPassengerCapacity();
 }

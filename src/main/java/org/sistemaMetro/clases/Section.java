@@ -2,10 +2,10 @@ package org.sistemaMetro.clases;
 import org.sistemaMetro.Interfaces.ISection;
 
 public class Section implements ISection{
-    public Station point1;
-    public Station point2;
-    public int distance;
-    public int cost;
+    private Station point1;
+    private Station point2;
+    private int distance;
+    private int cost;
 
     // Constructor
     public Section(Station point1, Station point2, int distance, int cost) {

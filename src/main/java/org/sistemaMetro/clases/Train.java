@@ -5,10 +5,10 @@ import org.sistemaMetro.Interfaces.ITrain;
 import org.sistemaMetro.clases.PassengerCar;
 
 public class Train implements ITrain{
-    public int id;
-    public String trainMaker;
-    public int speed;
-    public ArrayList<PassengerCar> carList;
+    private int id;
+    private String trainMaker;
+    private int speed;
+    private ArrayList<PassengerCar> carList;
 
     // Constructor
     public Train(int id, String trainMaker, int speed, ArrayList<PassengerCar> carList) {
@@ -60,7 +60,7 @@ public class Train implements ITrain{
     public int fetchCapacity(Train train){
         int capacity = 0;
         for (PassengerCar car : train.carList) {
-            capacity += car.passengerCapacity;
+            capacity += car.getPassengerCapacity();
         }
         return capacity;
     }
