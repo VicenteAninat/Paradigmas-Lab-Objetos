@@ -2,6 +2,7 @@ package org.sistemaMetro.clases;
 
 import java.util.ArrayList;
 import org.sistemaMetro.Interfaces.ITrain;
+import org.sistemaMetro.clases.PassengerCar;
 
 public class Train implements ITrain{
     public int id;
@@ -38,8 +39,20 @@ public class Train implements ITrain{
     }
 
     @Override
+    public boolean comprobacionIdUnico(Train train){
+        for (int i = 0; i < train.carList.size(); i++) {
+            for (int j = i + 1; j < train.carList.size(); j++) {
+                if (train.carList.get(i).getId() == train.carList.get(j).getId()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    @Override
     public boolean isTrain(Train train){
-        // some code
+
         return true; // Placeholder
     }
 

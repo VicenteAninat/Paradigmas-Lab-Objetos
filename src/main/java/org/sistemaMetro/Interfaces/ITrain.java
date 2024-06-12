@@ -3,6 +3,8 @@ package org.sistemaMetro.Interfaces;
 import org.sistemaMetro.clases.Train;
 import org.sistemaMetro.clases.PassengerCar;
 
+import java.util.ArrayList;
+
 public interface ITrain {
     /**
      * Añade un carro a un tren en una posición específica
@@ -20,6 +22,15 @@ public interface ITrain {
      * @param position posición en la que se removerá el carro
      */
     void removeCar(Train train, int position);
+
+
+    /**
+     * Comprueba si el id de los carros de un tren son únicos
+     *
+     * @param train tren que se quiere verificar
+     * @return boolean si el id es único
+     */
+    boolean comprobacionIdUnico(Train train);
 
     /**
      * Verifica si un tren es válido

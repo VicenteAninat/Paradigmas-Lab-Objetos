@@ -1,5 +1,13 @@
 package org.sistemaMetro.Interfaces;
 
-public interface IPassengerCar {
+import java.util.ArrayList;
+import org.sistemaMetro.clases.PassengerCar;
 
+public interface IPassengerCar {
+    /**
+     * Obtiene el id del carro
+     *
+     * @return int del id del carro
+     */
+    int getId();
 }

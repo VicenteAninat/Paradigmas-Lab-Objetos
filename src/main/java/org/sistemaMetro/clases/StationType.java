@@ -7,18 +7,14 @@ public class StationType {
         this.type = type;
     }
 
-    public String getType(StationType stationType){
-        return stationType.type;
+    public String getSType(){
+        return type;
     }
 
-    public boolean validType (StationType stationType){
-        if (stationType.getType(stationType).equals("c") ||
-                stationType.getType(stationType).equals("t") ||
-                stationType.getType(stationType).equals("m") ||
-                stationType.getType(stationType).equals("r")) {
-            return true;
-        } else {
-            return false;
-        }
+    public boolean validSType(StationType stationType){
+        return stationType.getSType().equals("c") ||
+                stationType.getSType().equals("t") ||
+                stationType.getSType().equals("m") ||
+                stationType.getSType().equals("r");
     }
 }

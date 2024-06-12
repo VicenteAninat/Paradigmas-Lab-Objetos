@@ -7,16 +7,12 @@ public class CarType {
         this.type = type;
     }
 
-    public String getType(CarType carType){
-        return carType.type;
+    public String getCType(){
+        return type;
     }
 
-    public boolean validType (CarType carType){
-        if (carType.getType(carType).equals("ct") ||
-                carType.getType(carType).equals("tr")) {
-            return true;
-        } else {
-            return false;
-        }
+    public boolean validCType (CarType carType){
+        return carType.getCType().equals("ct") ||
+                carType.getCType().equals("tr");
     }
 }

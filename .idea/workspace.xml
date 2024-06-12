@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se añadió documentación de los métodos de las interfaces IStation, ISection e ILine">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISection.java" afterDir="false" />
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se añadió documentación de los métodos de la interfaz ITrain y se corrigió la documentación de las interfaces anteriores">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IStation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/CarType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/CarType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/StationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/StationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +74,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/savia/Desktop/Códigos/Java/lab3_212547662_VicenteAninat/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,7 +91,10 @@
       <workItem from="1717878064641" duration="760000" />
       <workItem from="1717986537404" duration="2800000" />
       <workItem from="1718031409075" duration="13182000" />
-      <workItem from="1718158592035" duration="694000" />
+      <workItem from="1718158592035" duration="1026000" />
+      <workItem from="1718199755944" duration="7119000" />
+      <workItem from="1718207718625" duration="65000" />
+      <workItem from="1718212785430" duration="2202000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -124,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718159090160</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Se añadió documentación de los métodos de la interfaz ITrain y se corrigió la documentación de las interfaces anteriores">
+      <option name="closed" value="true" />
+      <created>1718159616177</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718159616177</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +167,8 @@
     <MESSAGE value="Se creó la clase CarType para representar los tipos de carros de metro en relacion a la clase PassengerCar." />
     <MESSAGE value="Se añadieron implementaciones de algunos de los requisitos funcionales del proyecto" />
     <MESSAGE value="Se añadió documentación de los métodos de las interfaces IStation, ISection e ILine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se añadió documentación de los métodos de las interfaces IStation, ISection e ILine" />
+    <MESSAGE value="Se añadió documentación de los métodos de la interfaz ITrain y se corrigió la documentación de las interfaces anteriores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añadió documentación de los métodos de la interfaz ITrain y se corrigió la documentación de las interfaces anteriores" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

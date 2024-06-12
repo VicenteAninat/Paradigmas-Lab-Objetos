@@ -48,6 +48,43 @@ public interface ILine {
     void lineAddSection(Line line, Section section);
 
     /**
+     * Verifica si una línea es regular,
+     * siendo regular que su primera y su ultima estación sean terminales,
+     * combinacion, o una combinacion de ambas
+     *
+     * @param line linea que se quiere verificar
+     * @return boolean si es regular o no
+     */
+    boolean comprobarLineaRegular(Line line);
+
+    /**
+     * Verifica si una línea es circular,
+     * siendo circular que su primera y su ultima estación sean la misma
+     *
+     * @param line linea que se quiere verificar
+     * @return boolean si es circular o no
+     */
+    boolean comprobarLineaCircular(Line line);
+
+    /**
+     * Verifica si de una estacion se puede llegar a todas las demas estaciones
+     * en una linea regular
+     *
+     * @param line linea que se quiere verificar
+     * @return boolean si se puede llegar a todas las estaciones o no
+     */
+    boolean verificarLlegadaRegular(Line line);
+
+    /**
+     * Verifica si de una estacion se puede llegar a todas las demas estaciones
+     * en una linea circular
+     *
+     * @param line linea que se quiere verificar
+     * @return boolean si se puede llegar a todas las estaciones o no
+     */
+    boolean verificarLlegadaCircular(Line line);
+
+    /**
     * Verifica si una linea es valida
     *
     * @param line linea que se quiere verificar

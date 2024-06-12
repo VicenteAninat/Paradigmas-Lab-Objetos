@@ -12,7 +12,7 @@ public class Station implements IStation{
         if (stopTime <= 0) {
             throw new IllegalArgumentException
                     ("El tiempo de detención debe ser un número positivo");
-        } else if (!type.validType(type)) {
+        } else if (!type.validSType(type)) {
             throw new IllegalArgumentException
                     ("El tipo de estación no es válido");
         } else {
@@ -27,6 +27,11 @@ public class Station implements IStation{
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public StationType getType() {
+        return type;
     }
 
     // Modificadores
