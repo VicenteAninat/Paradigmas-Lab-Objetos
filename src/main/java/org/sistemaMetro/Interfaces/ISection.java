@@ -5,28 +5,28 @@ public interface ISection {
     /**
      * Obtiene la primera estación de la sección
      *
-     * @return point1
+     * @return Station de la primera estación
      */
     Station getPoint1();
 
     /**
      * Obtiene la segunda estación de la sección
      *
-     * @return point2
+     * @return Station de la segunda estación
      */
     Station getPoint2();
 
     /**
      * Obtiene la distancia entre las dos estaciones
      *
-     * @return distance
+     * @return int de la distancia
      */
     int getDistance();
 
     /**
      * Obtiene el costo de la sección
      *
-     * @return cost
+     * @return int del costo
      */
     int getCost();
 }
