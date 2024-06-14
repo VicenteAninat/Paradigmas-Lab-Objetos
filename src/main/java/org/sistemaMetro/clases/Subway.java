@@ -18,4 +18,8 @@ public class Subway implements ISubway{
         this.lines = new ArrayList<Line>();
         this.drivers = new ArrayList<Driver>();
     }
+
+    public void subwayAddTrain (Subway subway, Train train){
+        // some code
+    }
 }
