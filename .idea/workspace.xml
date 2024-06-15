@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se añadió la estructura del metodo para añadir trenes a una red de metro en la clase Subway">
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se añadió el metodo de añadir trenes a una red como parte de una interfaz para que la clase herede de esta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISubway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISubway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,8 @@
       <workItem from="1718199755944" duration="7119000" />
       <workItem from="1718207718625" duration="65000" />
       <workItem from="1718212785430" duration="3391000" />
-      <workItem from="1718330822759" duration="470000" />
+      <workItem from="1718330822759" duration="1227000" />
+      <workItem from="1718401204184" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -160,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718331202256</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Se añadió el metodo de añadir trenes a una red como parte de una interfaz para que la clase herede de esta">
+      <option name="closed" value="true" />
+      <created>1718331637465</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718331637465</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +197,8 @@
     <MESSAGE value="Se añadieron implementaciones de los requisitos funcionales del proyecto" />
     <MESSAGE value="Se cambiaron los modificadores de acceso para los atributos de las clases y se implementó el contructor de la clase Subway que representa la red de metro" />
     <MESSAGE value="Se añadió la estructura del metodo para añadir trenes a una red de metro en la clase Subway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se añadió la estructura del metodo para añadir trenes a una red de metro en la clase Subway" />
+    <MESSAGE value="Se añadió el metodo de añadir trenes a una red como parte de una interfaz para que la clase herede de esta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añadió el metodo de añadir trenes a una red como parte de una interfaz para que la clase herede de esta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

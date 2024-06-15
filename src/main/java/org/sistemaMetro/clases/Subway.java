@@ -11,6 +11,7 @@ public class Subway implements ISubway{
     private ArrayList<Line> lines;
     private ArrayList<Driver> drivers;
 
+    // Constructor
     public Subway(int id, String name){
         this.id = id;
         this.name = name;
@@ -19,7 +20,41 @@ public class Subway implements ISubway{
         this.drivers = new ArrayList<Driver>();
     }
 
-    public void subwayAddTrain (Subway subway, Train train){
-        // some code
+    // Selectores
+    public ArrayList<Train> getTrains() {
+        return trains;
+    }
+
+    public ArrayList<Line> getLines() {
+        return lines;
+    }
+
+    public ArrayList<Driver> getDrivers() {
+        return drivers;
+    }
+
+    @Override
+    public void subwayAddTrain (Subway subway, ArrayList<Train> trainList){
+        subway.trains.addAll(trainList);
+    }
+
+    @Override
+    public void subwayAddLine (Subway subway, ArrayList<Line> lineList){
+        subway.lines.addAll(lineList);
+    }
+
+    @Override
+    public void subwayAddDriver (Subway subway, ArrayList<Driver> driverList){
+        subway.drivers.addAll(driverList);
+    }
+
+    public String toString(Subway subway){
+        return "Subway{" +
+                "id=" + subway.id +
+                ", name='" + subway.name + '\'' +
+                ", trains=" + subway.trains +
+                ", lines=" + subway.lines +
+                ", drivers=" + subway.drivers +
+                '}';
     }
 }
