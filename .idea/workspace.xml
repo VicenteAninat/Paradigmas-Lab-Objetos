@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se implementaron metodos requeridos a la clase subway" />
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se implementaron metodos requeridos a la clase subway">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,6 +89,7 @@
       <workItem from="1718330822759" duration="1227000" />
       <workItem from="1718401204184" duration="759000" />
       <workItem from="1718422079289" duration="336000" />
+      <workItem from="1718579373303" duration="2285000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -220,8 +224,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
+          <line>10</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
