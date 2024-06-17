@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se implementaron metodos requeridos a la clase subway">
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se modificó el archivo main del proyecto para implementar el menú del sistema de metro.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +92,8 @@
       <workItem from="1718330822759" duration="1227000" />
       <workItem from="1718401204184" duration="759000" />
       <workItem from="1718422079289" duration="336000" />
-      <workItem from="1718579373303" duration="2285000" />
+      <workItem from="1718579373303" duration="3322000" />
+      <workItem from="1718655288329" duration="3015000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -187,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718422399042</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Se creó la clase Menu para la implementación del menú interactivo del proyecto">
+      <option name="closed" value="true" />
+      <created>1718582247496</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718582247496</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Se modificó el archivo main del proyecto para implementar el menú del sistema de metro.">
+      <option name="closed" value="true" />
+      <created>1718582377661</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718582377661</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +237,9 @@
     <MESSAGE value="Se añadió el metodo de añadir trenes a una red como parte de una interfaz para que la clase herede de esta" />
     <MESSAGE value="Se añadieron metodos requeridos a la clase subway" />
     <MESSAGE value="Se implementaron metodos requeridos a la clase subway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementaron metodos requeridos a la clase subway" />
+    <MESSAGE value="Se creó la clase Menu para la implementación del menú interactivo del proyecto" />
+    <MESSAGE value="Se modificó el archivo main del proyecto para implementar el menú del sistema de metro." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modificó el archivo main del proyecto para implementar el menú del sistema de metro." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

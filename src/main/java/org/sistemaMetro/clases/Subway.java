@@ -34,18 +34,18 @@ public class Subway implements ISubway{
     }
 
     @Override
-    public void subwayAddTrain (Subway subway, ArrayList<Train> trainList){
-        subway.trains.addAll(trainList);
+    public void subwayAddTrain (ArrayList<Train> trainList){
+        trains.addAll(trainList);
     }
 
     @Override
-    public void subwayAddLine (Subway subway, ArrayList<Line> lineList){
-        subway.lines.addAll(lineList);
+    public void subwayAddLine (ArrayList<Line> lineList){
+        lines.addAll(lineList);
     }
 
     @Override
-    public void subwayAddDriver (Subway subway, ArrayList<Driver> driverList){
-        subway.drivers.addAll(driverList);
+    public void subwayAddDriver (ArrayList<Driver> driverList){
+        drivers.addAll(driverList);
     }
 
     public String toString(Subway subway){

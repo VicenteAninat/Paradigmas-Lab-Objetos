@@ -29,8 +29,8 @@ public class Train implements ITrain{
 
     // Métodos
     @Override
-    public void addCar(Train train, PassengerCar carro, int position) {
-        train.carList.add(position, carro);
+    public void addCar(PassengerCar carro, int position) {
+        carList.add(position, carro);
     }
 
     @Override

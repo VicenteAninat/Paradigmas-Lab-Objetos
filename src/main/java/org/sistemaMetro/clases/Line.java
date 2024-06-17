@@ -18,34 +18,40 @@ public class Line implements ILine{
         this.sections = new ArrayList<Section>();
     }
 
+    // Selectores
+    @Override
+    public ArrayList<Section> getSections() {
+        return sections;
+    }
+
     // Métodos
     @Override
-    public int lineLength(Line line) {
+    public int lineLength() {
         int length = 0;
-        for (Section section : line.sections) {
+        for (Section section : sections) {
             length += section.getDistance();
         }
         return length;
     }
 
     @Override
-    public int lineSectionLength(Line line, String station1Name, String station2Name) {
+    public int lineSectionLength(String station1Name, String station2Name) {
         int length = 0;
         int index1 = 0;
         int index2 = 0;
-        for (Section section : line.sections) {
+        for (Section section : sections) {
             if (section.getPoint1().getName().equals(station1Name)) {
-                index1 = line.sections.indexOf(section);
+                index1 = sections.indexOf(section);
                 break;
             }
         }
-        for (Section section : line.sections) {
+        for (Section section : sections) {
             if (section.getPoint2().getName().equals(station2Name)){
-                index2 = line.sections.indexOf(section);
+                index2 = sections.indexOf(section);
                 break;
             }
         }
-        List<Section> listaCortada = (this.sections.subList(index1, index2));
+        List<Section> listaCortada = sections.subList(index1, index2);
         for (Section section : listaCortada) {
             length += section.getDistance();
         }
@@ -53,28 +59,28 @@ public class Line implements ILine{
     }
 
     @Override
-    public int lineCost(Line line) {
+    public int lineCost() {
         int cost = 0;
-        for (Section section : line.sections) {
+        for (Section section : sections) {
             cost += section.getCost();
         }
         return cost;
     }
 
     @Override
-    public int lineSectionCost(Line line, String station1Name, String station2Name) {
+    public int lineSectionCost(String station1Name, String station2Name) {
         int cost = 0;
         int index1 = 0;
         int index2 = 0;
-        for (Section section : line.sections) {
+        for (Section section : sections) {
             if (section.getPoint1().getName().equals(station1Name)) {
-                index1 = line.sections.indexOf(section);
+                index1 = sections.indexOf(section);
                 break;
             }
         }
-        for (Section section : line.sections) {
+        for (Section section : sections) {
             if (section.getPoint2().getName().equals(station2Name)){
-                index2 = line.sections.indexOf(section);
+                index2 = sections.indexOf(section);
                 break;
             }
         }
@@ -86,8 +92,8 @@ public class Line implements ILine{
     }
 
     @Override
-    public void lineAddSection(Line line, Section section) {
-        line.sections.add(section);
+    public void lineAddSection(Section section) {
+        sections.add(section);
     }
 
     @Override
