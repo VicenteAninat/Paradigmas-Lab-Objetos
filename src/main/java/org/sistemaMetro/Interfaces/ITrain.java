@@ -9,11 +9,10 @@ public interface ITrain {
     /**
      * Añade un carro a un tren en una posición específica
      *
-     * @param train al que se le añadirá el carro
      * @param carro que se añadirá
      * @param position posición en la que se añadirá el carro
      */
-    void addCar(Train train, PassengerCar carro, int position);
+    void addCar(PassengerCar carro, int position);
 
     /**
      * Remueve un carro de un tren en una posición específica

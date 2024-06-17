@@ -2,50 +2,54 @@ package org.sistemaMetro.Interfaces;
 import org.sistemaMetro.clases.Line;
 import org.sistemaMetro.clases.Section;
 
+import java.util.ArrayList;
+
 public interface ILine {
+    /**
+     * Obtiene las secciones de una línea
+     *
+     * @return Lista de secciones
+     */
+    ArrayList<Section> getSections();
+
     /**
     * Obtiene el largo de una línea
     *
-    * @param line a la que se le quiere obtener el largo
     * @return int del largo
      */
-    int lineLength(Line line);
+    int lineLength();
 
     /**
     * Obtiene el largo de una sección de una línea
     *
-    * @param line a la que se le quiere obtener el largo de la sección
     * @param station1Name nombre de la estación 1
     * @param station2Name nombre de la estación 2
     * @return int del largo de la sección
      */
-    int lineSectionLength(Line line, String station1Name, String station2Name);
+    int lineSectionLength(String station1Name, String station2Name);
 
     /**
     * Obtiene el costo de una línea
     *
-    * @param line a la que se le quiere obtener el costo
     * @return int del costo
      */
-    int lineCost(Line line);
+    int lineCost();
 
     /**
     * Obtiene el costo de una sección de una línea
     *
-    * @param line a la que se le quiere obtener el costo de la sección
     * @param station1Name nombre de la estación 1
     * @param station2Name nombre de la estación 2
     * @return int del costo de la sección
      */
-    int lineSectionCost(Line line, String station1Name, String station2Name);
+    int lineSectionCost(String station1Name, String station2Name);
 
     /**
     * Agrega una sección a una línea
     *
-    * @param line a la que se le quiere agregar una sección
     * @param section seccion que se quiere agregar
      */
-    void lineAddSection(Line line, Section section);
+    void lineAddSection(Section section);
 
     /**
      * Verifica si una línea es regular,
