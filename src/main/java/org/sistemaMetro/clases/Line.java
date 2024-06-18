@@ -11,11 +11,11 @@ public class Line implements ILine{
     private ArrayList<Section> sections;
 
     // Constructor
-    public Line(int id, String name, String railType) {
+    public Line(int id, String name, String railType, ArrayList<Section> sections) {
         this.id = id;
         this.name = name;
         this.railType = railType;
-        this.sections = new ArrayList<Section>();
+        this.sections = sections;
     }
 
     // Selectores

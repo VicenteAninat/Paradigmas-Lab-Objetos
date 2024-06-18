@@ -32,6 +32,38 @@ public interface ITrain {
     boolean comprobacionIdUnico(Train train);
 
     /**
+     * Comprueba si los modelos de los carros de un tren son iguales
+     *
+     * @param train tren que se quiere verificar
+     * @return boolean si los modelos son únicos
+     */
+    boolean comprobacionMismoModelo(Train train);
+
+    /**
+     * Comprueba si los extremos de un tren son terminales
+     *
+     * @param train tren que se quiere verificar
+     * @return boolean si los extremos son válidos
+     */
+    boolean comprobacionExtremosValidos(Train train);
+
+    /**
+     * Comprueba si los carros centrales de un tren son tipo centrales
+     *
+     * @param train tren que se quiere verificar
+     * @return boolean si el centro es válido
+     */
+    boolean comprobacionCentroValido(Train train);
+
+    /**
+     * Comprueba si la estructura de un tren es válida
+     *
+     * @param train tren que se quiere verificar
+     * @return boolean si la estructura es válida
+     */
+    boolean estructuraValida(Train train);
+
+    /**
      * Verifica si un tren es válido
      *
      * @param train tren que se quiere verificar

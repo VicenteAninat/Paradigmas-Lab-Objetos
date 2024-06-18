@@ -1,7 +1,6 @@
 package org.sistemaMetro.Interfaces;
 
-import java.util.ArrayList;
-import org.sistemaMetro.clases.PassengerCar;
+import org.sistemaMetro.clases.CarType;
 
 public interface IPassengerCar {
     /**
@@ -17,4 +16,18 @@ public interface IPassengerCar {
      * @return int de la capacidad de pasajeros del carro
      */
     int getPassengerCapacity();
+
+    /**
+     * Obtiene el modelo del carro
+     *
+     * @return String del modelo del carro
+     */
+    String getModel();
+
+    /**
+     * Obtiene el tipo de carro
+     *
+     * @return CarType del tipo de carro
+     */
+    CarType getCarType();
 }

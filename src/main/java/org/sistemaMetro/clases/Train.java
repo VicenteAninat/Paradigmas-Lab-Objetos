@@ -51,9 +51,70 @@ public class Train implements ITrain{
     }
 
     @Override
-    public boolean isTrain(Train train){
+    public boolean comprobacionMismoModelo(Train train){
+        for (int i = 0; i < train.carList.size(); i++) {
+            for (int j = i + 1; j < train.carList.size(); j++) {
+                if (!train.carList.get(i).getModel().equals(train.carList.get(j).getModel())) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
-        return true; // Placeholder
+    @Override
+    public boolean comprobacionExtremosValidos(Train train){
+        if (!((train.carList.get(0).getCarType().getCType().equals(train.carList.get(train.carList.size() - 1).getCarType().getCType()))
+                &&  (train.carList.get(0).getCarType().getCType().equals("tr")))) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean comprobacionCentroValido(Train train){
+        for (int i = 1; i < train.carList.size() - 2; i++) {
+            if (train.carList.get(i).getCarType().getCType().equals("tr")) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public boolean estructuraValida(Train train){
+        if (!comprobacionExtremosValidos(train)) {
+            return false;
+        } else if (!comprobacionCentroValido(train)){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean isTrain(Train train){
+        try {
+            if (train.speed <= 0) {
+                throw new IllegalArgumentException
+                        ("La velocidad del tren debe ser un número positivo");
+            } else if (train.carList.size() == 0 || train.carList.size() == 1) {
+                throw new IllegalArgumentException
+                        ("Cantidad de carros invalida");
+            } else if (!comprobacionIdUnico(train)) {
+                throw new IllegalArgumentException
+                        ("Los id de los carros no son únicos");
+            } else if (!comprobacionMismoModelo(train)) {
+                throw new IllegalArgumentException
+                        ("Los modelos de los carros difieren");
+            } else if (!estructuraValida(train)) {
+                throw new IllegalArgumentException
+                        ("La estructura del tren no es válida");
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+        return true;
     }
 
     @Override

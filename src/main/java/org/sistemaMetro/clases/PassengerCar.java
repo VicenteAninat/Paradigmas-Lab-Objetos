@@ -38,5 +38,15 @@ public class PassengerCar implements IPassengerCar{
         return passengerCapacity;
     }
 
+    @Override
+    public String getModel() {
+        return model;
+    }
+
+    @Override
+    public CarType getCarType() {
+        return carType;
+    }
+
     // Métodos
 }
