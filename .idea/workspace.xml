@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se corrigió la implementacion de algunos de los requerimientos funcionales en las clases Line, Subway y Train.">
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se modificó el archivo main del proyecto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,9 @@
       <workItem from="1718422079289" duration="336000" />
       <workItem from="1718579373303" duration="3322000" />
       <workItem from="1718655288329" duration="4804000" />
-      <workItem from="1718735880803" duration="4953000" />
+      <workItem from="1718735880803" duration="6193000" />
+      <workItem from="1718755405540" duration="609000" />
+      <workItem from="1718834439643" duration="4397000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -226,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718660963392</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Se corrigió la implementacion de algunos de los metodos en las clases Line, PassengerCar y Train.">
+      <option name="closed" value="true" />
+      <created>1718741094993</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718741094993</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Se modificó el archivo main del proyecto">
+      <option name="closed" value="true" />
+      <created>1718741154596</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718741154596</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +274,9 @@
     <MESSAGE value="Se modificó el archivo main del proyecto para implementar el menú del sistema de metro." />
     <MESSAGE value="Se corrigieron los parametros de entrada de algunas interfaces según los requerimientos funcionales del programa" />
     <MESSAGE value="Se corrigió la implementacion de algunos de los requerimientos funcionales en las clases Line, Subway y Train." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se corrigió la implementacion de algunos de los requerimientos funcionales en las clases Line, Subway y Train." />
+    <MESSAGE value="Se corrigió la implementacion de algunos de los metodos en las clases Line, PassengerCar y Train." />
+    <MESSAGE value="Se modificó el archivo main del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modificó el archivo main del proyecto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

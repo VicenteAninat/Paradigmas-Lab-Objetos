@@ -10,7 +10,7 @@ import java.util.List;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        //Menu.run();
+        Menu.run();
         StationType t = new StationType("t");
         StationType c = new StationType("c");
         StationType m = new StationType("m");
