@@ -48,13 +48,13 @@ public class Subway implements ISubway{
         drivers.addAll(driverList);
     }
 
-    public String toString(Subway subway){
-        return "Subway{" +
-                "id=" + subway.id +
-                ", name='" + subway.name + '\'' +
-                ", trains=" + subway.trains +
-                ", lines=" + subway.lines +
-                ", drivers=" + subway.drivers +
-                '}';
+    @Override
+    public String toString(){
+        return "Datos de la red de metro\n" +
+                "id = " + id + "\n" +
+                "nombre = " + name + "\n" +
+                "trenes = " + trains + "\n" +
+                "lineas = " + lines + "\n" +
+                "conductores = " + drivers + "\n";
     }
 }

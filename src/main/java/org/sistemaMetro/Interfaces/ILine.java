@@ -6,6 +6,13 @@ import java.util.ArrayList;
 
 public interface ILine {
     /**
+     * Obtiene el id de la línea
+     *
+     * @return int del id de la línea
+     */
+    int getId();
+
+    /**
      * Obtiene las secciones de una línea
      *
      * @return Lista de secciones

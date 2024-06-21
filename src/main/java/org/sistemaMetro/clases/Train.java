@@ -24,6 +24,15 @@ public class Train implements ITrain{
     }
 
     // Selectores
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public ArrayList<PassengerCar> getCarList() {
+        return carList;
+    }
 
     // Modificadores
 
@@ -118,9 +127,9 @@ public class Train implements ITrain{
     }
 
     @Override
-    public int fetchCapacity(Train train){
+    public int fetchCapacity(){
         int capacity = 0;
-        for (PassengerCar car : train.carList) {
+        for (PassengerCar car : carList) {
             capacity += car.getPassengerCapacity();
         }
         return capacity;

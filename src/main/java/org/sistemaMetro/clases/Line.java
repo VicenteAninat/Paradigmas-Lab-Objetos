@@ -20,6 +20,11 @@ public class Line implements ILine{
 
     // Selectores
     @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
     public ArrayList<Section> getSections() {
         return sections;
     }

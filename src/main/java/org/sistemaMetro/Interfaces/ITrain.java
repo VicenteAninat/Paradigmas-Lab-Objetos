@@ -7,6 +7,20 @@ import java.util.ArrayList;
 
 public interface ITrain {
     /**
+     * Obtiene el id del tren
+     *
+     * @return int del id del tren
+     */
+    int getId();
+
+    /**
+     * Obtiene la lista de carros de un tren
+     *
+     * @return Lista de carros
+     */
+    ArrayList<PassengerCar> getCarList();
+
+    /**
      * Añade un carro a un tren en una posición específica
      *
      * @param carro que se añadirá
@@ -74,8 +88,7 @@ public interface ITrain {
     /**
      * Obtiene la capacidad de pasajeros de un tren
      *
-     * @param train del que se quiere obtener la capacidad
      * @return int de la capacidad
      */
-    int fetchCapacity(Train train);
+    int fetchCapacity();
 }

@@ -32,8 +32,7 @@ public interface ISubway {
     /**
      * Convierte a String una red de metro
      *
-     * @param subway objeto de tipo Subway
      * @return String con la información de la red de metro
      */
-    String toString(Subway subway);
+    String toString();
 }
