@@ -100,7 +100,7 @@ public class Main {
         Train T1 = new Train(1, "Maker01", 100, carrosList);
 
         System.out.println("Tren");
-        System.out.println(T1.fetchCapacity(T1));
+        System.out.println(T1.fetchCapacity());
         System.out.println(T1.isTrain(T1));
     }
 }
