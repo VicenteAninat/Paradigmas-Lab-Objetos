@@ -328,6 +328,7 @@ public class Menu {
         return null;
         }
     }
+    // metodo pendiente de revision
 
     public static ArrayList<Train> extraerTrenes(String direccion){
         // se leen los pcars y los trenes para añadirlos
