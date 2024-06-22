@@ -330,6 +330,7 @@ public class Menu {
     }
 
     public static ArrayList<Train> extraerTrenes(String direccion){
+        // se leen los pcars y los trenes para añadirlos
         return null;
     }
 }

@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se modificó el archivo main del proyecto">
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se implementaron más opciones para el menú del programa y se modificó el archivo main acorde a los cambios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISubway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISubway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/savia/Desktop/PARADIGMAS LABS - LA VENGANZA/lab3_212547662_VicenteAninat",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/savia/Desktop/Códigos/Java/lab3_212547662_VicenteAninat/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/savia/Desktop/PARADIGMAS LABS - LA VENGANZA/lab3_212547662_VicenteAninat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/savia/Desktop/Códigos/Java/lab3_212547662_VicenteAninat/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -106,7 +98,10 @@
       <workItem from="1718834439643" duration="4397000" />
       <workItem from="1718852409348" duration="760000" />
       <workItem from="1718913364387" duration="3787000" />
-      <workItem from="1718925981424" duration="6540000" />
+      <workItem from="1718925981424" duration="6931000" />
+      <workItem from="1719002225799" duration="1816000" />
+      <workItem from="1719004144880" duration="2418000" />
+      <workItem from="1719025945107" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -268,7 +263,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718852554020</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Se modificó la implementación de algunos métodos de las clases Line, Subway y Train dentro del proyecto">
+      <option name="closed" value="true" />
+      <created>1718937520087</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1718937520087</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Se implementaron más opciones para el menú del programa y se modificó el archivo main acorde a los cambios">
+      <option name="closed" value="true" />
+      <created>1718937625857</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718937625857</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +316,9 @@
     <MESSAGE value="Se corrigió la implementacion de algunos de los metodos en las clases Line, PassengerCar y Train." />
     <MESSAGE value="Se modificó la implementación del menú del proyecto" />
     <MESSAGE value="Se modificó el archivo main del proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modificó el archivo main del proyecto" />
+    <MESSAGE value="Se modificó la implementación de algunos métodos de las clases Line, Subway y Train dentro del proyecto" />
+    <MESSAGE value="Se implementaron más opciones para el menú del programa y se modificó el archivo main acorde a los cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementaron más opciones para el menú del programa y se modificó el archivo main acorde a los cambios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
