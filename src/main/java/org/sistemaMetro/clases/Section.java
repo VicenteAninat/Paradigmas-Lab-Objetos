@@ -35,4 +35,13 @@ public class Section implements ISection{
     public int getCost() {
         return cost;
     }
+
+    // Métodos
+    @Override
+    public String toString(){
+        return "Estación 1: " + point1.getName() + "\n" +
+                "Estación 2: " + point2.getName() + "\n" +
+                "Distancia: " + distance + "\n" +
+                "Costo: " + cost + "\n";
+    }
 }

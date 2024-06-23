@@ -10,39 +10,34 @@ import java.util.List;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Menu.run();
-        StationType t = new StationType("t");
-        StationType c = new StationType("c");
-        StationType m = new StationType("m");
-        StationType r = new StationType("r");
-
-        Station E1 = new Station(1, "San Pablo", c, 45);
-        Station E2 = new Station(2, "Neptuno", r, 50);
-        Station E3 = new Station(3, "Pajaritos", r, 40);
-        Station E4 = new Station(4, "Las Rejas", r, 45);
-        Station E5 = new Station(5, "Ecuador", r, 55);
-        Station E6 = new Station(6, "San Alberto Hurtado", r, 40);
-        Station E7 = new Station(7, "Universidad de Santiago", r, 50);
-        Station E8 = new Station(8, "Estacion Central", r, 45);
-        Station E9 = new Station(9, "Unión Latinoamericana", r, 40);
-        Station E10 = new Station(10, "Republica", r, 50);
-        Station E11 = new Station(11, "Los Heroes", c, 45);
-        Station E12 = new Station(12, "La Moneda", r, 40);
-        Station E13 = new Station(13, "Universidad de Chile", c, 50);
-        Station E14 = new Station(14, "Santa Lucia", r, 45);
-        Station E15 = new Station(15, "Universidad Catolica", r, 40);
-        Station E16 = new Station(16, "Baquedano", c, 50);
-        Station E17 = new Station(17, "Salvador", r, 45);
-        Station E18 = new Station(18, "Manuel Montt", r, 40);
-        Station E19 = new Station(19, "Pedro de Valdivia", r, 50);
-        Station E20 = new Station(20, "Los Leones", r, 45);
-        Station E21 = new Station(21, "Tobalaba", c, 40);
-        Station E22 = new Station(22, "El Golf", r, 50);
-        Station E23 = new Station(23, "Alcantara", r, 45);
-        Station E24 = new Station(24, "Escuela Militar", r, 40);
-        Station E25 = new Station(25, "Manquehue", r, 50);
-        Station E26 = new Station(26, "Hernando de Magallanes", r, 45);
-        Station E27 = new Station(27, "Los Dominicos", t, 40);
+        // Inicializacion
+        Station E1 = new Station(1, "San Pablo", "c", 45);
+        Station E2 = new Station(2, "Neptuno", "r", 50);
+        Station E3 = new Station(3, "Pajaritos", "r", 40);
+        Station E4 = new Station(4, "Las Rejas", "r", 45);
+        Station E5 = new Station(5, "Ecuador", "r", 55);
+        Station E6 = new Station(6, "San Alberto Hurtado", "r", 40);
+        Station E7 = new Station(7, "Universidad de Santiago", "r", 50);
+        Station E8 = new Station(8, "Estacion Central", "r", 45);
+        Station E9 = new Station(9, "Unión Latinoamericana", "r", 40);
+        Station E10 = new Station(10, "Republica", "r", 50);
+        Station E11 = new Station(11, "Los Heroes", "c", 45);
+        Station E12 = new Station(12, "La Moneda", "r", 40);
+        Station E13 = new Station(13, "Universidad de Chile", "c", 50);
+        Station E14 = new Station(14, "Santa Lucia", "r", 45);
+        Station E15 = new Station(15, "Universidad Catolica", "r", 40);
+        Station E16 = new Station(16, "Baquedano", "c", 50);
+        Station E17 = new Station(17, "Salvador", "r", 45);
+        Station E18 = new Station(18, "Manuel Montt", "r", 40);
+        Station E19 = new Station(19, "Pedro de Valdivia", "r", 50);
+        Station E20 = new Station(20, "Los Leones", "r", 45);
+        Station E21 = new Station(21, "Tobalaba", "c", 40);
+        Station E22 = new Station(22, "El Golf", "r", 50);
+        Station E23 = new Station(23, "Alcantara", "r", 45);
+        Station E24 = new Station(24, "Escuela Militar", "r", 40);
+        Station E25 = new Station(25, "Manquehue", "r", 50);
+        Station E26 = new Station(26, "Hernando de Magallanes", "r", 45);
+        Station E27 = new Station(27, "Los Dominicos", "t", 40);
 
         Section S1 = new Section(E1, E2, 100, 200);
         Section S2 = new Section(E2, E3, 80, 250);
@@ -85,13 +80,11 @@ public class Main {
         System.out.println(L1.isLine(L1));
         System.out.println("\n");
 
-        CarType tr = new CarType("tr");
-        CarType ct = new CarType("ct");
-        PassengerCar C1 = new PassengerCar(1, 50, "Modelo01", "Maker01", tr);
-        PassengerCar C2 = new PassengerCar(2, 60, "Modelo01", "Maker01", ct);
-        PassengerCar C3 = new PassengerCar(3, 70, "Modelo01", "Maker01", ct);
-        PassengerCar C4 = new PassengerCar(4, 80, "Modelo01", "Maker01", tr);
-        PassengerCar C5 = new PassengerCar(5, 90, "Modelo01", "Maker01", ct);
+        PassengerCar C1 = new PassengerCar(1, 50, "Modelo01", "Maker01", "tr");
+        PassengerCar C2 = new PassengerCar(2, 60, "Modelo01", "Maker01", "ct");
+        PassengerCar C3 = new PassengerCar(3, 70, "Modelo01", "Maker01", "ct");
+        PassengerCar C4 = new PassengerCar(4, 80, "Modelo01", "Maker01", "tr");
+        PassengerCar C5 = new PassengerCar(5, 90, "Modelo01", "Maker01", "ct");
 
         List<PassengerCar> carros = Arrays.asList(C1, C2, C3, C4);
         ArrayList<PassengerCar> carrosList = new ArrayList<PassengerCar>();
@@ -102,5 +95,26 @@ public class Main {
         System.out.println("Tren");
         System.out.println(T1.fetchCapacity());
         System.out.println(T1.isTrain(T1));
+
+        Driver D1 = new Driver(1, "Pedro", "TMCavalier");
+        Driver D2 = new Driver(2, "Juan", "TMCavalier");
+        Driver D3 = new Driver(3, "Diego", "TMCavalier");
+
+        ArrayList<Line> lineas = new ArrayList<Line>();
+        lineas.add(L1);
+        ArrayList<Train> trenes = new ArrayList<Train>();
+        trenes.add(T1);
+        ArrayList<Driver> conductores = new ArrayList<Driver>();
+        conductores.add(D1);
+        conductores.add(D2);
+        conductores.add(D3);
+
+        Subway S = new Subway(1, "Metro de Santiago");
+        S.subwayAddLine(lineas);
+        S.subwayAddTrain(trenes);
+        S.subwayAddDriver(conductores);
+
+        Menu.run(S);
+
     }
 }

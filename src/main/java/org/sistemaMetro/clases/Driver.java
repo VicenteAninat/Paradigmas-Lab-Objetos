@@ -13,4 +13,28 @@ public class Driver implements IDriver{
         this.name = name;
         this.trainMaker = trainMaker;
     }
+
+    // Selectores
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getTrainMaker() {
+        return trainMaker;
+    }
+
+    // Métodos
+    @Override
+    public String toString(){
+        return "id:" + id + "\n" +
+                "Conductor: " + name + "\n" +
+                "Train Maker: " + trainMaker + "\n";
+    }
 }

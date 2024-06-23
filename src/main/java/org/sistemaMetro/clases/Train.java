@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import org.sistemaMetro.Interfaces.ITrain;
 import org.sistemaMetro.clases.PassengerCar;
 
+import java.util.stream.Collectors;
+
 public class Train implements ITrain{
     private int id;
     private String trainMaker;
@@ -27,6 +29,16 @@ public class Train implements ITrain{
     @Override
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String getTrainMaker() {
+        return trainMaker;
+    }
+
+    @Override
+    public int getSpeed() {
+        return speed;
     }
 
     @Override
@@ -72,9 +84,20 @@ public class Train implements ITrain{
     }
 
     @Override
+    public boolean comprobacionMismoFabricante(Train train){
+        String fabricante = train.getTrainMaker();
+        for (int i = 0; i < train.carList.size(); i++) {
+            if (!train.carList.get(i).getTrainMaker().equals(fabricante)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
     public boolean comprobacionExtremosValidos(Train train){
-        if (!((train.carList.get(0).getCarType().getCType().equals(train.carList.get(train.carList.size() - 1).getCarType().getCType()))
-                &&  (train.carList.get(0).getCarType().getCType().equals("tr")))) {
+        if (!((train.carList.get(0).getCarType().equals(train.carList.get(train.carList.size() - 1).getCarType()))
+                &&  (train.carList.get(0).getCarType().equals("tr")))) {
             return false;
         }
         return true;
@@ -83,7 +106,7 @@ public class Train implements ITrain{
     @Override
     public boolean comprobacionCentroValido(Train train){
         for (int i = 1; i < train.carList.size() - 2; i++) {
-            if (train.carList.get(i).getCarType().getCType().equals("tr")) {
+            if (train.carList.get(i).getCarType().equals("tr")) {
                 return false;
             }
         }
@@ -115,6 +138,9 @@ public class Train implements ITrain{
             } else if (!comprobacionMismoModelo(train)) {
                 throw new IllegalArgumentException
                         ("Los modelos de los carros difieren");
+            } else if (!comprobacionMismoFabricante(train)){
+                throw new IllegalArgumentException
+                        ("Los fabricantes de los carros difieren");
             } else if (!estructuraValida(train)) {
                 throw new IllegalArgumentException
                         ("La estructura del tren no es válida");
@@ -133,5 +159,15 @@ public class Train implements ITrain{
             capacity += car.getPassengerCapacity();
         }
         return capacity;
+    }
+
+    @Override
+    public String toString(){
+        String carDetails = carList.stream().map(PassengerCar::toString).collect(Collectors.joining(", "));
+        return "Datos del tren\n" +
+                "id = " + id + "\n" +
+                "fabricante = " + trainMaker + "\n" +
+                "velocidad = " + speed + "\n" +
+                "carros del tren\n" + carDetails + "\n\n";
     }
 }

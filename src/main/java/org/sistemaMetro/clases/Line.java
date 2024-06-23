@@ -2,6 +2,7 @@ package org.sistemaMetro.clases;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import org.sistemaMetro.Interfaces.ILine;
 
 public class Line implements ILine{
@@ -22,6 +23,16 @@ public class Line implements ILine{
     @Override
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getRailType() {
+        return railType;
     }
 
     @Override
@@ -103,21 +114,21 @@ public class Line implements ILine{
 
     @Override
     public boolean comprobarLineaRegular(Line line){
-        StationType typeInicial = line.sections.get(0).getPoint1().getType();
-        StationType typeFinal =
+        String typeInicial = line.sections.get(0).getPoint1().getType();
+        String typeFinal =
                 line.sections.get(line.sections.size()-1).getPoint2().getType();
         return  // Caso 1: Inicial y final son terminales
-                (typeInicial.getSType().equals(typeFinal.getSType()) &&
-                typeInicial.getSType().equals("t")) ||
+                (typeInicial.equals(typeFinal) &&
+                typeInicial.equals("t")) ||
                 // Caso 2: Inicial es combinacion y final es terminal
-                (typeInicial.getSType().equals("c") &&
-                        (typeFinal).getSType().equals("t")) ||
+                (typeInicial.equals("c") &&
+                        (typeFinal).equals("t")) ||
                 // Caso 3: Inicial es terminal y final es combinacion
-                (typeInicial.getSType().equals("t") &&
-                        (typeFinal).getSType().equals("c")) ||
+                (typeInicial.equals("t") &&
+                        (typeFinal).equals("c")) ||
                 // Caso 4: Inicial y final son combinacion
-                (typeInicial.getSType().equals(typeFinal.getSType()) &&
-                        typeInicial.getSType().equals("c"));
+                (typeInicial.equals(typeFinal) &&
+                        typeInicial.equals("c"));
     }
 
     @Override
@@ -156,7 +167,7 @@ public class Line implements ILine{
         for (Section section : line.sections) {
             if (section.getPoint1().equals(estaciones.get(estaciones.size()-1))) {
                 estaciones.add(section.getPoint2());
-            } else if (estaciones.get(estaciones.size()-1).getType().getSType().equals("m")){
+            } else if (estaciones.get(estaciones.size()-1).getType().equals("m")){
                 estaciones.add(section.getPoint2());
             } else {
                 comprobador = false;
@@ -175,5 +186,19 @@ public class Line implements ILine{
         } else {
             return false;
         }
+    }
+
+    @Override
+    public String toString(){
+        String sectionDetails = sections.stream().map(Section::toString).collect(Collectors.joining(", "));
+        return "Datos de la línea\n" +
+                "id = " + id + "\n" +
+                "nombre = " + name + "\n" +
+                "tipo de riel = " + railType + "\n" +
+                "Secciones\n" +
+                sectionDetails + "\n" +
+                "Estaciones\n" +
+                sections.stream().map(Section::getPoint1).map(Station::getName).collect(Collectors.joining("\n")) + "\n" +
+                sections.get(sections.size()-1).getPoint2().getName() + "\n";
     }
 }

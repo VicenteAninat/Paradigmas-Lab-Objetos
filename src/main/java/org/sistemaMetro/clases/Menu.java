@@ -7,8 +7,7 @@ import java.util.ArrayList;
 
 public class Menu {
 
-    public static void run(){
-        Subway subway = new Subway(1, "Red de metro");
+    public static void run(Subway subway){
         Scanner entrada = new Scanner(System.in);
         boolean continuar = true;
 
@@ -58,24 +57,29 @@ public class Menu {
         int seleccion = entrada.nextInt();
         switch (seleccion) {
             case 1:
-                System.out.println("Ingrese el id de la linea.\n");
+                System.out.println("Ingrese el id de la linea.");
                 seleccion = entrada.nextInt();
+                boolean exito = false;
                 for (Line linea : subway.getLines()) {
                     if (linea.getId() == seleccion) {
                         System.out.println("El largo de la linea es: " + linea.lineLength() + "\n");
+                        exito = true;
                         break;
                     }
                 }
-                System.out.println("Linea no encontrada... volviendo al menú anterior\n");
+                if (!exito) {
+                    System.out.println("Linea no encontrada... volviendo al menú anterior\n");
+                }
                 break;
 
             case 2:
-                System.out.println("Ingrese el id de la linea.\n");
+                System.out.println("Ingrese el id de la linea.");
                 seleccion = entrada.nextInt();
-                System.out.println("Ingrese el nombre de la estacion de partida.\n");
-                String estacion1 = entrada.next();
-                System.out.println("Ingrese el nombre de la estacion de llegada.\n");
-                String estacion2 = entrada.next();
+                entrada.nextLine();
+                System.out.println("Ingrese el nombre de la estacion de partida.");
+                String estacion1 = entrada.nextLine();
+                System.out.println("Ingrese el nombre de la estacion de llegada.");
+                String estacion2 = entrada.nextLine();
 
                 for (Line linea : subway.getLines()) {
                     if (linea.getId() == seleccion) {
@@ -88,26 +92,31 @@ public class Menu {
             case 3:
                 System.out.println("Ingrese el id de la linea.\n");
                 seleccion = entrada.nextInt();
+                boolean exito2 = false;
                 for (Line linea : subway.getLines()) {
                     if (linea.getId() == seleccion) {
-                        System.out.println("El largo de la linea es: " + linea.lineCost() + "\n");
+                        System.out.println("El costo de la linea es: " + linea.lineCost() + "\n");
+                        exito2 = true;
                         break;
                     }
                 }
-                System.out.println("Linea no encontrada... volviendo al menú anterior\n");
+                if (!exito2) {
+                    System.out.println("Linea no encontrada... volviendo al menú anterior\n");
+                }
                 break;
 
             case 4:
-                System.out.println("Ingrese el id de la linea.\n");
+                System.out.println("Ingrese el id de la linea.");
                 seleccion = entrada.nextInt();
-                System.out.println("Ingrese el nombre de la estacion de partida.\n");
-                String estacionUno = entrada.next();
-                System.out.println("Ingrese el nombre de la estacion de llegada.\n");
-                String estacionDos = entrada.next();
+                entrada.nextLine();
+                System.out.println("Ingrese el nombre de la estacion de partida.");
+                String estacionUno = entrada.nextLine();
+                System.out.println("Ingrese el nombre de la estacion de llegada.");
+                String estacionDos = entrada.nextLine();
 
                 for (Line linea : subway.getLines()) {
                     if (linea.getId() == seleccion) {
-                        System.out.println("El largo de la linea es: " + linea.lineSectionCost(estacionUno, estacionDos) + "\n");
+                        System.out.println("El costo de la linea es: " + linea.lineSectionCost(estacionUno, estacionDos) + "\n");
                         break;
                     }
                 }
@@ -116,8 +125,10 @@ public class Menu {
             case 5:
                 System.out.println("Ingrese el id de la linea.\n");
                 seleccion = entrada.nextInt();
+                boolean exito3 = false;
                 for (Line linea : subway.getLines()) {
                     if (linea.getId() == seleccion) {
+                        exito3 = true;
                         if (linea.isLine(linea)) {
                             System.out.println("¡La linea es valida!\n");
                         } else {
@@ -126,7 +137,9 @@ public class Menu {
                         }
                     }
                 }
-                System.out.println("Linea no encontrada... volviendo al menú anterior\n");
+                if (!exito3) {
+                    System.out.println("Linea no encontrada... volviendo al menú anterior\n");
+                }
                 break;
 
             case 6:
@@ -197,8 +210,7 @@ public class Menu {
                 System.out.println(subway.toString());
                 break;
             case 13:
-                System.out.println("Saliendo...");
-                continuar = false;
+                System.out.println("Volviendo...");
                 break;
             default:
                 System.out.println("Opción no válida... volviendo al menú principal \n\n");
@@ -259,6 +271,7 @@ public class Menu {
                 String fabricante = partes[2];
                 Driver driver = new Driver(id, nombre, fabricante);
                 drivers.add(driver);
+                System.out.println("id = " + driver.getId() + ", nombre = " + driver.getName() + ", fabricante = " + driver.getTrainMaker());
             }
             lector.close();
             return drivers;
@@ -285,8 +298,10 @@ public class Menu {
                 if (linea.equals("-")) {
                     if (estado.equals("estaciones")) {
                         estado = "secciones";
+                        System.out.println("\n");
                     } else if (estado.equals("secciones")) {
                         estado = "lineas";
+                        System.out.println("\n");
                     }
                 } else {
                     String[] partes = linea.split(", ");
@@ -295,10 +310,11 @@ public class Menu {
                         case "estaciones":
                             int idEstacion = Integer.parseInt(partes[0]);
                             String nombre = partes[1];
-                            StationType tipo = new StationType(partes[2]);
+                            String tipo = partes[2];
                             int tiempoDetencion = Integer.parseInt(partes[3]);
                             Station estacion = new Station(idEstacion, nombre, tipo, tiempoDetencion);
                             estaciones.add(estacion);
+                            System.out.println("id =" + estacion.getId() + ", nombre = " + estacion.getName() + ", tipo = " + estacion.getType() + ", tiempo de detencion = " + estacion.getStopTime());
                             break;
                         case "secciones":
                             Station estacion1 = estaciones.get(Integer.parseInt(partes[0]) - 1);
@@ -307,6 +323,7 @@ public class Menu {
                             int coste = Integer.parseInt(partes[3]);
                             Section seccion = new Section(estacion1, estacion2, distancia, coste);
                             secciones.add(seccion);
+                            System.out.println("Estacion 1 = " + seccion.getPoint1().getName() + ", Estacion 2 = " + seccion.getPoint2().getName() + ", distancia = " + seccion.getDistance() + ", coste = " + seccion.getCost());
                             break;
                         case "lineas":
                             int idLinea = Integer.parseInt(partes[0]);
@@ -314,7 +331,7 @@ public class Menu {
                             String tipoRail = partes[2];
                             Line lineaMetro = new Line(idLinea, nombreLinea, tipoRail, secciones);
                             lineas.add(lineaMetro);
-                            System.out.println(lineaMetro);
+                            System.out.println("id = " + lineaMetro.getId() + ", nombre = " + lineaMetro.getName() + ", tipo = " + lineaMetro.getRailType() + ", secciones = " + lineaMetro.getSections().size());
                             break;
                     }
                 }
@@ -328,10 +345,63 @@ public class Menu {
         return null;
         }
     }
-    // metodo pendiente de revision
 
     public static ArrayList<Train> extraerTrenes(String direccion){
-        // se leen los pcars y los trenes para añadirlos
-        return null;
+        try {
+            File archivo = new File(direccion);
+            Scanner lector = new Scanner(archivo);
+            ArrayList<PassengerCar> carros = new ArrayList<>();
+            ArrayList<Train> trenes = new ArrayList<>();
+            String estado = "carros";
+            while (lector.hasNextLine()) {
+                String linea = lector.nextLine();
+                if (linea.equals("-")) {
+                    if (estado.equals("carros")) {
+                        estado = "trenes";
+                        System.out.println("\n");
+                    }
+                } else {
+                    String[] partes = linea.split(", ");
+
+                    switch (estado) {
+                        case "carros":
+                            int idCarro = Integer.parseInt(partes[0]);
+                            int capacidad = Integer.parseInt(partes[1]);
+                            String modelo = partes[2];
+                            String fabricante = partes[3];
+                            String tipo = partes[4];
+                            PassengerCar carro = new PassengerCar(idCarro, capacidad, modelo, fabricante, tipo);
+                            System.out.println("id = " + carro.getId() + ", capacidad = " + carro.getPassengerCapacity() + ", modelo = " + carro.getModel() + ", fabricante = " + carro.getTrainMaker() + ", tipo = " + carro.getCarType());
+                            carros.add(carro);
+                            break;
+                        case "trenes":
+                            int idTren = Integer.parseInt(partes[0]);
+                            String fabricante2 = partes[1];
+                            int velocidad = Integer.parseInt(partes[2]);
+                            String[] partesCarros = partes[3].split(";");
+                            ArrayList<PassengerCar> listaCarros = new ArrayList<>();
+
+                            for (int i = 0; i < partesCarros.length; i++) {
+                                int id = Integer.parseInt(partesCarros[i]);
+                                for (PassengerCar carroObj : carros) {
+                                    if (carroObj.getId() == id) {
+                                        listaCarros.add(carroObj);
+                                    }
+                                }
+                            }
+                            Train tren = new Train(idTren, fabricante2, velocidad, listaCarros);
+                            trenes.add(tren);
+                            System.out.println("id = " + tren.getId() + ", fabricante = " + tren.getTrainMaker() + ", velocidad = " + tren.getSpeed() + ", carros = " + tren.getCarList().size());
+                            break;
+                        }
+                    }
+                }
+            lector.close();
+            return trenes;
+        } catch (FileNotFoundException e) {
+            System.out.println("Archivo no encontrado.");
+            e.printStackTrace();
+            return null;
+        }
     }
 }

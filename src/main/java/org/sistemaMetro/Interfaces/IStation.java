@@ -1,8 +1,13 @@
 package org.sistemaMetro.Interfaces;
 
-import org.sistemaMetro.clases.StationType;
-
 public interface IStation {
+    /**
+     * Obtiene el id de la estación
+     *
+     * @return id de la estación
+     */
+    int getId();
+
     /**
      * Obtiene el nombre de la estación
      *
@@ -15,5 +20,20 @@ public interface IStation {
      *
      * @return tipo de la estación
      */
-    StationType getType();
+    String getType();
+
+    /**
+     * Obtiene el tiempo de detención de la estación
+     *
+     * @return tiempo de detención de la estación
+     */
+    int getStopTime();
+
+    /**
+     * Valida el tipo de estación
+     *
+     * @param stationType tipo de estación
+     * @return true si el tipo de estación es válido, false en caso contrario
+     */
+    boolean validSType(String stationType);
 }

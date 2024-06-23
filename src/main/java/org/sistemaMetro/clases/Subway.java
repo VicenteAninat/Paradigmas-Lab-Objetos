@@ -3,6 +3,8 @@ package org.sistemaMetro.clases;
 import org.sistemaMetro.Interfaces.ISubway;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
+
 
 public class Subway implements ISubway{
     private int id;
@@ -50,11 +52,18 @@ public class Subway implements ISubway{
 
     @Override
     public String toString(){
+        String trainDetails = trains.stream().map(Train::toString).collect(Collectors.joining(", "));
+        String lineDetails = lines.stream().map(Line::toString).collect(Collectors.joining(", "));
+        String driverDetails = drivers.stream().map(Driver::toString).collect(Collectors.joining(", "));
+
         return "Datos de la red de metro\n" +
                 "id = " + id + "\n" +
                 "nombre = " + name + "\n" +
-                "trenes = " + trains + "\n" +
-                "lineas = " + lines + "\n" +
-                "conductores = " + drivers + "\n";
+                "Trenes\n" +
+                trainDetails + "\n" +
+                "lineas\n" +
+                lineDetails + "\n" +
+                "conductores\n" +
+                driverDetails + "\n";
     }
 }

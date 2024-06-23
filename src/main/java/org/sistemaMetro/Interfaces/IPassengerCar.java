@@ -1,7 +1,5 @@
 package org.sistemaMetro.Interfaces;
 
-import org.sistemaMetro.clases.CarType;
-
 public interface IPassengerCar {
     /**
      * Obtiene el id del carro
@@ -25,9 +23,24 @@ public interface IPassengerCar {
     String getModel();
 
     /**
+     * Obtiene el fabricante del carro
+     *
+     * @return String del fabricante del carro
+     */
+    String getTrainMaker();
+
+    /**
      * Obtiene el tipo de carro
      *
      * @return CarType del tipo de carro
      */
-    CarType getCarType();
+    String getCarType();
+
+    /**
+     * Valida el tipo de carro
+     *
+     * @param carType tipo de carro
+     * @return true si el tipo de carro es válido, false en caso contrario
+     */
+    boolean validCType (String carType);
 }

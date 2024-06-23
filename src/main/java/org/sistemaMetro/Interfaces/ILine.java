@@ -13,6 +13,20 @@ public interface ILine {
     int getId();
 
     /**
+     * Obtiene el nombre de la línea
+     *
+     * @return String del nombre de la línea
+     */
+    String getName();
+
+    /**
+     * Obtiene el tipo de riel de la línea
+     *
+     * @return String del tipo de riel de la línea
+     */
+    String getRailType();
+
+    /**
      * Obtiene las secciones de una línea
      *
      * @return Lista de secciones

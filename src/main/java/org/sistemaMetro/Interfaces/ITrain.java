@@ -14,6 +14,20 @@ public interface ITrain {
     int getId();
 
     /**
+     * Obtiene el fabricante del tren
+     *
+     * @return String del fabricante del tren
+     */
+    String getTrainMaker();
+
+    /**
+     * Obtiene la velocidad del tren
+     *
+     * @return int de la velocidad del tren
+     */
+    int getSpeed();
+
+    /**
      * Obtiene la lista de carros de un tren
      *
      * @return Lista de carros
@@ -52,6 +66,14 @@ public interface ITrain {
      * @return boolean si los modelos son únicos
      */
     boolean comprobacionMismoModelo(Train train);
+
+    /**
+     * Comprueba si los fabricantes de los carros de un tren son iguales
+     *
+     * @param train tren que se quiere verificar
+     * @return boolean si los fabricantes son iguales
+     */
+    boolean comprobacionMismoFabricante(Train train);
 
     /**
      * Comprueba si los extremos de un tren son terminales

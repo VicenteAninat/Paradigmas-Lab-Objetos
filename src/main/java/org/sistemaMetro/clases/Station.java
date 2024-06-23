@@ -4,15 +4,15 @@ import org.sistemaMetro.Interfaces.IStation;
 public class Station implements IStation{
     private int id;
     private String name;
-    private StationType type;
+    private String type;
     private int stopTime;
 
     // Constructor
-    public Station(int id, String name, StationType type, int stopTime) {
+    public Station(int id, String name, String type, int stopTime) {
         if (stopTime <= 0) {
             throw new IllegalArgumentException
                     ("El tiempo de detención debe ser un número positivo");
-        } else if (!type.validSType(type)) {
+        } else if (!validSType(type)) {
             throw new IllegalArgumentException
                     ("El tipo de estación no es válido");
         } else {
@@ -25,14 +25,33 @@ public class Station implements IStation{
 
     // Selectores
     @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
     public String getName() {
         return name;
     }
 
     @Override
-    public StationType getType() {
+    public String getType() {
         return type;
     }
 
+    @Override
+    public int getStopTime() {
+        return stopTime;
+    }
+
     // Modificadores
+
+    // Métodos
+    @Override
+    public boolean validSType(String stationType){
+        return stationType.equals("c") ||
+                stationType.equals("t") ||
+                stationType.equals("m") ||
+                stationType.equals("r");
+    }
 }
