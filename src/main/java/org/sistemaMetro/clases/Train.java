@@ -2,25 +2,29 @@ package org.sistemaMetro.clases;
 
 import java.util.ArrayList;
 import org.sistemaMetro.Interfaces.ITrain;
-import org.sistemaMetro.clases.PassengerCar;
 
 import java.util.stream.Collectors;
 
 public class Train implements ITrain{
-    private int id;
-    private String trainMaker;
-    private int speed;
+    private final int id;
+    private final String trainMaker;
+    private final int speed;
+    private final int stationStaytime;
     private ArrayList<PassengerCar> carList;
 
     // Constructor
-    public Train(int id, String trainMaker, int speed, ArrayList<PassengerCar> carList) {
+    public Train(int id, String trainMaker, int speed, int stationStaytime, ArrayList<PassengerCar> carList) {
         if (speed <= 0) {
             throw new IllegalArgumentException
                     ("La velocidad del tren debe ser un número positivo");
+        } else if (stationStaytime <= 0){
+            throw new IllegalArgumentException
+                    ("El tiempo de detencion debe ser un número positivo");
         } else {
             this.id = id;
             this.trainMaker = trainMaker;
             this.speed = speed;
+            this.stationStaytime = stationStaytime;
             this.carList = carList;
         }
     }
@@ -39,6 +43,11 @@ public class Train implements ITrain{
     @Override
     public int getSpeed() {
         return speed;
+    }
+
+    @Override
+    public int getStationStaytime() {
+        return stationStaytime;
     }
 
     @Override
@@ -129,6 +138,9 @@ public class Train implements ITrain{
             if (train.speed <= 0) {
                 throw new IllegalArgumentException
                         ("La velocidad del tren debe ser un número positivo");
+            } if(train.stationStaytime <= 0) {
+                throw new IllegalArgumentException
+                        ("El tiempo de detencion debe ser un número positivo");
             } else if (train.carList.size() == 0 || train.carList.size() == 1) {
                 throw new IllegalArgumentException
                         ("Cantidad de carros invalida");
@@ -168,6 +180,7 @@ public class Train implements ITrain{
                 "id = " + id + "\n" +
                 "fabricante = " + trainMaker + "\n" +
                 "velocidad = " + speed + "\n" +
+                "tiempo de detencion = " + stationStaytime + "\n" +
                 "carros del tren\n" + carDetails + "\n\n";
     }
 }

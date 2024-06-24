@@ -3,9 +3,9 @@ package org.sistemaMetro.clases;
 import org.sistemaMetro.Interfaces.IDriver;
 
 public class Driver implements IDriver{
-    private int id;
-    private String name;
-    private String trainMaker;
+    private final int id;
+    private final String name;
+    private final String trainMaker;
 
     // Constructor
     public Driver(int id, String name, String trainMaker){

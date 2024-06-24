@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import org.sistemaMetro.Interfaces.IPassengerCar;
 
 public class PassengerCar implements IPassengerCar{
-    private int id;
-    private int passengerCapacity;
-    private String model;
-    private String trainMaker;
-    private String carType;
+    private final int id;
+    private final int passengerCapacity;
+    private final String model;
+    private final String trainMaker;
+    private final String carType;
 
     // Constructor
     public PassengerCar(int id, int passengerCapacity, String model, String trainMaker, String carType) {

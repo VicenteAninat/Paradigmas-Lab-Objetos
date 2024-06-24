@@ -28,6 +28,13 @@ public interface ITrain {
     int getSpeed();
 
     /**
+     * Obtiene el tiempo de estancia en la estación del tren
+     *
+     * @return int del tiempo de estancia en la estación del tren
+     */
+    int getStationStaytime();
+
+    /**
      * Obtiene la lista de carros de un tren
      *
      * @return Lista de carros

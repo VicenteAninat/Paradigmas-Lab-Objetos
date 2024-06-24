@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 import org.sistemaMetro.Interfaces.ILine;
 
 public class Line implements ILine{
-    private int id;
-    private String name;
-    private String railType;
+    private final int id;
+    private final String name;
+    private final String railType;
     private ArrayList<Section> sections;
 
     // Constructor
