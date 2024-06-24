@@ -1,0 +1,6 @@
+1, 50, ModeloL2, TMWyvern, tr
+2, 60, ModeloL2, TMWyvern, ct
+3, 70, ModeloL2, TMWyvern, ct
+4, 80, ModeloL2, TMWyvern, tr
+-
+1, Maker01, 100, 50, listaCarros
