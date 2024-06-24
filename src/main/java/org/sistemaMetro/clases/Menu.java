@@ -12,7 +12,7 @@ public class Menu {
         boolean continuar = true;
 
         while(continuar) {
-            System.out.println("¡Bienvenido!\n");
+            System.out.println("¡Bienvenido!");
             System.out.println("Por favor ingrese el numero de una opción:\n\n" +
                     "1.- Cargar datos\n2.- Operar sobre la red\n3.- Salir");
 
@@ -90,7 +90,7 @@ public class Menu {
                 break;
 
             case 3:
-                System.out.println("Ingrese el id de la linea.\n");
+                System.out.println("Ingrese el id de la linea.");
                 seleccion = entrada.nextInt();
                 boolean exito2 = false;
                 for (Line linea : subway.getLines()) {
@@ -123,7 +123,7 @@ public class Menu {
                 break;
 
             case 5:
-                System.out.println("Ingrese el id de la linea.\n");
+                System.out.println("Ingrese el id de la linea.");
                 seleccion = entrada.nextInt();
                 boolean exito3 = false;
                 for (Line linea : subway.getLines()) {
@@ -143,12 +143,13 @@ public class Menu {
                 break;
 
             case 6:
-                System.out.println("Ingrese el id del tren.\n");
+                System.out.println("Ingrese el id del tren.");
                 seleccion = entrada.nextInt();
-                System.out.println("Ingrese el id del carro.\n");
+                System.out.println("Ingrese el id del carro.");
                 int idCarro = entrada.nextInt();
-                System.out.println("Ingrese la posicion en la que se añadirá el carro.\n");
+                System.out.println("Ingrese la posicion en la que se añadirá el carro.");
                 int posicion = entrada.nextInt();
+
                 for (Train tren : subway.getTrains()) {
                     if (tren.getId() == seleccion) {
                         for (PassengerCar carro : tren.getCarList()) {
@@ -163,7 +164,7 @@ public class Menu {
                 break;
 
             case 7:
-                System.out.println("Ingrese el id del tren\n");
+                System.out.println("Ingrese el id del tren");
                 seleccion = entrada.nextInt();
                 System.out.println("Ingrese la posición del carro que desea remover.\n");
                 int posicionCarro = entrada.nextInt();
@@ -177,7 +178,7 @@ public class Menu {
                 break;
 
             case 8:
-                System.out.println("Ingrese el id del tren.\n");
+                System.out.println("Ingrese el id del tren.");
                 seleccion = entrada.nextInt();
                 for (Train tren : subway.getTrains()) {
                     if (tren.getId() == seleccion) {
@@ -191,7 +192,7 @@ public class Menu {
                 }
                 break;
             case 9:
-                System.out.println("Ingrese el id del tren.\n");
+                System.out.println("Ingrese el id del tren.");
                 seleccion = entrada.nextInt();
                 for (Train tren : subway.getTrains()) {
                     if (tren.getId() == seleccion) {
@@ -378,7 +379,8 @@ public class Menu {
                             int idTren = Integer.parseInt(partes[0]);
                             String fabricante2 = partes[1];
                             int velocidad = Integer.parseInt(partes[2]);
-                            String[] partesCarros = partes[3].split(";");
+                            int tiempoEstancia = Integer.parseInt(partes[3]);
+                            String[] partesCarros = partes[4].split(";");
                             ArrayList<PassengerCar> listaCarros = new ArrayList<>();
 
                             for (int i = 0; i < partesCarros.length; i++) {
@@ -389,7 +391,7 @@ public class Menu {
                                     }
                                 }
                             }
-                            Train tren = new Train(idTren, fabricante2, velocidad, listaCarros);
+                            Train tren = new Train(idTren, fabricante2, velocidad, tiempoEstancia, listaCarros);
                             trenes.add(tren);
                             System.out.println("id = " + tren.getId() + ", fabricante = " + tren.getTrainMaker() + ", velocidad = " + tren.getSpeed() + ", carros = " + tren.getCarList().size());
                             break;

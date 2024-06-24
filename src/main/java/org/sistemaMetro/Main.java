@@ -72,13 +72,15 @@ public class Main {
 
         Line L1 = new Line(1, "Linea 1", "Rail01", sectionsList);
 
+        /*
         System.out.println("Linea");
-        System.out.println(L1.lineLength());
-        System.out.println(L1.lineSectionLength("San Pablo", "Universidad de Santiago"));
-        System.out.println(L1.lineCost());
-        System.out.println(L1.lineSectionCost("San Pablo", "Universidad de Santiago"));
-        System.out.println(L1.isLine(L1));
+        System.out.println(L1.lineLength()); //Debe dar 2460
+        System.out.println(L1.lineSectionLength("San Pablo", "Universidad de Santiago")); // Debe dar 460
+        System.out.println(L1.lineCost()); // Debe dar 6500
+        System.out.println(L1.lineSectionCost("San Pablo", "Universidad de Santiago")); // Debe dar 1200
+        System.out.println(L1.isLine(L1)); // Debe dar true
         System.out.println("\n");
+         */
 
         PassengerCar C1 = new PassengerCar(1, 50, "Modelo01", "Maker01", "tr");
         PassengerCar C2 = new PassengerCar(2, 60, "Modelo01", "Maker01", "ct");
@@ -90,11 +92,13 @@ public class Main {
         ArrayList<PassengerCar> carrosList = new ArrayList<PassengerCar>();
         carrosList.addAll(carros);
 
-        Train T1 = new Train(1, "Maker01", 100, carrosList);
+        Train T1 = new Train(1, "Maker01", 100, 60, carrosList);
 
+        /*
         System.out.println("Tren");
-        System.out.println(T1.fetchCapacity());
-        System.out.println(T1.isTrain(T1));
+        System.out.println(T1.fetchCapacity()); // Debe dar 260
+        System.out.println(T1.isTrain(T1)); // Debe dar true
+         */
 
         Driver D1 = new Driver(1, "Pedro", "TMCavalier");
         Driver D2 = new Driver(2, "Juan", "TMCavalier");
@@ -115,6 +119,5 @@ public class Main {
         S.subwayAddDriver(conductores);
 
         Menu.run(S);
-
     }
 }
