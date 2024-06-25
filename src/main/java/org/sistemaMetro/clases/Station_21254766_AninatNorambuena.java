@@ -1,14 +1,14 @@
 package org.sistemaMetro.clases;
-import org.sistemaMetro.Interfaces.IStation;
+import org.sistemaMetro.Interfaces.IStation_21254766_AninatNorambuena;
 
-public class Station implements IStation{
+public class Station_21254766_AninatNorambuena implements IStation_21254766_AninatNorambuena {
     private final int id;
     private final String name;
     private final String type;
     private final int stopTime;
 
     // Constructor
-    public Station(int id, String name, String type, int stopTime) {
+    public Station_21254766_AninatNorambuena(int id, String name, String type, int stopTime) {
         if (stopTime <= 0) {
             throw new IllegalArgumentException
                     ("El tiempo de detención debe ser un número positivo");

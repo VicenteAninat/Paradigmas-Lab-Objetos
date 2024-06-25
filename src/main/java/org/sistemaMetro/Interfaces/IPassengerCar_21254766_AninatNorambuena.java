@@ -1,6 +1,6 @@
 package org.sistemaMetro.Interfaces;
 
-public interface IPassengerCar {
+public interface IPassengerCar_21254766_AninatNorambuena {
     /**
      * Obtiene el id del carro
      *

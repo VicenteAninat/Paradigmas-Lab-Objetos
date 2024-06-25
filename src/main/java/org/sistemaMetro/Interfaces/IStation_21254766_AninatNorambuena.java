@@ -1,6 +1,6 @@
 package org.sistemaMetro.Interfaces;
 
-public interface IStation {
+public interface IStation_21254766_AninatNorambuena {
     /**
      * Obtiene el id de la estación
      *

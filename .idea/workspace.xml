@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se modificó la implementacion para poder manipular con mayor efectividad la red de metro a traves del menú">
+    <list default="true" id="41fcf463-6d28-4292-ba0b-628669d6e25b" name="Changes" comment="Se modificó la presentacion del menú y el archivo main del proyecto">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main_21254766_AninatNorambuena.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IDriver_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ILine_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IPassengerCar_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISection_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/IStation_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISubway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ISubway_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Interfaces/ITrain_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Driver_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Line_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Menu_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/PassengerCar_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Section_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Station_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Subway_21254766_AninatNorambuena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sistemaMetro/clases/Train_21254766_AninatNorambuena.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,25 +71,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/savia/Desktop/PARADIGMAS LABS - LA VENGANZA/lab3_212547662_VicenteAninat&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/savia/Desktop/Códigos/Java/lab3_212547662_VicenteAninat/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/savia/Desktop/PARADIGMAS LABS - LA VENGANZA/lab3_212547662_VicenteAninat",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/savia/Desktop/Códigos/Java/lab3_212547662_VicenteAninat/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -117,6 +128,9 @@
       <workItem from="1719089287141" duration="933000" />
       <workItem from="1719109607492" duration="928000" />
       <workItem from="1719155288355" duration="8110000" />
+      <workItem from="1719198363444" duration="5517000" />
+      <workItem from="1719242510203" duration="861000" />
+      <workItem from="1719249897474" duration="2731000" />
     </task>
     <task id="LOCAL-00001" summary="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa">
       <option name="closed" value="true" />
@@ -326,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719109935441</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Se modificó la implementacion de los atributos de las clases en pos de una mayor robustez del sistema de metro">
+      <option name="closed" value="true" />
+      <created>1719198536336</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1719198536336</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Se modificó la presentacion del menú y el archivo main del proyecto">
+      <option name="closed" value="true" />
+      <created>1719198595543</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1719198595543</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +374,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se creó el proyecto y se crearon las clases principales para el funcionamiento del programa" />
     <MESSAGE value="Se creó la clase StationType para representar los tipos de estaciones de metro en relacion a la clase Station." />
     <MESSAGE value="Se creó la clase CarType para representar los tipos de carros de metro en relacion a la clase PassengerCar." />
     <MESSAGE value="Se añadieron implementaciones de algunos de los requisitos funcionales del proyecto" />
@@ -368,13 +397,15 @@
     <MESSAGE value="Se añadieron detalles de la forma de implementacion de metodos en el menu" />
     <MESSAGE value="Se modificó la implementación de los tipos de estacion y carro, eliminando las clases que los contenian" />
     <MESSAGE value="Se modificó la implementacion para poder manipular con mayor efectividad la red de metro a traves del menú" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modificó la implementacion para poder manipular con mayor efectividad la red de metro a traves del menú" />
+    <MESSAGE value="Se modificó la implementacion de los atributos de las clases en pos de una mayor robustez del sistema de metro" />
+    <MESSAGE value="Se modificó la presentacion del menú y el archivo main del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modificó la presentacion del menú y el archivo main del proyecto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/sistemaMetro/Main_21254766_AninatNorambuena.java</url>
           <line>122</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>

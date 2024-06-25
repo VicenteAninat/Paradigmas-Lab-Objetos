@@ -1,10 +1,10 @@
 package org.sistemaMetro.Interfaces;
-import org.sistemaMetro.clases.Line;
-import org.sistemaMetro.clases.Section;
+import org.sistemaMetro.clases.Line_21254766_AninatNorambuena;
+import org.sistemaMetro.clases.Section_21254766_AninatNorambuena;
 
 import java.util.ArrayList;
 
-public interface ILine {
+public interface ILine_21254766_AninatNorambuena {
     /**
      * Obtiene el id de la línea
      *
@@ -31,7 +31,7 @@ public interface ILine {
      *
      * @return Lista de secciones
      */
-    ArrayList<Section> getSections();
+    ArrayList<Section_21254766_AninatNorambuena> getSections();
 
     /**
     * Obtiene el largo de una línea
@@ -70,7 +70,7 @@ public interface ILine {
     *
     * @param section seccion que se quiere agregar
      */
-    void lineAddSection(Section section);
+    void lineAddSection(Section_21254766_AninatNorambuena section);
 
     /**
      * Verifica si una línea es regular,
@@ -80,7 +80,7 @@ public interface ILine {
      * @param line linea que se quiere verificar
      * @return boolean si es regular o no
      */
-    boolean comprobarLineaRegular(Line line);
+    boolean comprobarLineaRegular(Line_21254766_AninatNorambuena line);
 
     /**
      * Verifica si una línea es circular,
@@ -89,7 +89,7 @@ public interface ILine {
      * @param line linea que se quiere verificar
      * @return boolean si es circular o no
      */
-    boolean comprobarLineaCircular(Line line);
+    boolean comprobarLineaCircular(Line_21254766_AninatNorambuena line);
 
     /**
      * Verifica si de una estacion se puede llegar a todas las demas estaciones
@@ -98,7 +98,7 @@ public interface ILine {
      * @param line linea que se quiere verificar
      * @return boolean si se puede llegar a todas las estaciones o no
      */
-    boolean verificarLlegadaRegular(Line line);
+    boolean verificarLlegadaRegular(Line_21254766_AninatNorambuena line);
 
     /**
      * Verifica si de una estacion se puede llegar a todas las demas estaciones
@@ -107,7 +107,7 @@ public interface ILine {
      * @param line linea que se quiere verificar
      * @return boolean si se puede llegar a todas las estaciones o no
      */
-    boolean verificarLlegadaCircular(Line line);
+    boolean verificarLlegadaCircular(Line_21254766_AninatNorambuena line);
 
     /**
     * Verifica si una linea es valida
@@ -115,5 +115,5 @@ public interface ILine {
     * @param line linea que se quiere verificar
     * @return boolean si es válida o no
      */
-    boolean isLine(Line line);
+    boolean isLine(Line_21254766_AninatNorambuena line);
 }

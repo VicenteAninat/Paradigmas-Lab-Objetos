@@ -1,14 +1,14 @@
 package org.sistemaMetro.clases;
 
-import org.sistemaMetro.Interfaces.IDriver;
+import org.sistemaMetro.Interfaces.IDriver_21254766_AninatNorambuena;
 
-public class Driver implements IDriver{
+public class Driver_21254766_AninatNorambuena implements IDriver_21254766_AninatNorambuena {
     private final int id;
     private final String name;
     private final String trainMaker;
 
     // Constructor
-    public Driver(int id, String name, String trainMaker){
+    public Driver_21254766_AninatNorambuena(int id, String name, String trainMaker){
         this.id = id;
         this.name = name;
         this.trainMaker = trainMaker;

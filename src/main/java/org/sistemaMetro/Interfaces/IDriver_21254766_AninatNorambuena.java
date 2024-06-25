@@ -1,6 +1,6 @@
 package org.sistemaMetro.Interfaces;
 
-public interface IDriver {
+public interface IDriver_21254766_AninatNorambuena {
     /**
      * Obtiene el id del conductor
      *

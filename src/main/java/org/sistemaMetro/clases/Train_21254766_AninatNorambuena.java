@@ -1,19 +1,19 @@
 package org.sistemaMetro.clases;
 
 import java.util.ArrayList;
-import org.sistemaMetro.Interfaces.ITrain;
+import org.sistemaMetro.Interfaces.ITrain_21254766_AninatNorambuena;
 
 import java.util.stream.Collectors;
 
-public class Train implements ITrain{
+public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNorambuena {
     private final int id;
     private final String trainMaker;
     private final int speed;
     private final int stationStaytime;
-    private ArrayList<PassengerCar> carList;
+    private ArrayList<PassengerCar_21254766_AninatNorambuena> carList;
 
     // Constructor
-    public Train(int id, String trainMaker, int speed, int stationStaytime, ArrayList<PassengerCar> carList) {
+    public Train_21254766_AninatNorambuena(int id, String trainMaker, int speed, int stationStaytime, ArrayList<PassengerCar_21254766_AninatNorambuena> carList) {
         if (speed <= 0) {
             throw new IllegalArgumentException
                     ("La velocidad del tren debe ser un número positivo");
@@ -51,7 +51,7 @@ public class Train implements ITrain{
     }
 
     @Override
-    public ArrayList<PassengerCar> getCarList() {
+    public ArrayList<PassengerCar_21254766_AninatNorambuena> getCarList() {
         return carList;
     }
 
@@ -59,17 +59,17 @@ public class Train implements ITrain{
 
     // Métodos
     @Override
-    public void addCar(PassengerCar carro, int position) {
+    public void addCar(PassengerCar_21254766_AninatNorambuena carro, int position) {
         carList.add(position, carro);
     }
 
     @Override
-    public void removeCar(Train train, int position) {
+    public void removeCar(Train_21254766_AninatNorambuena train, int position) {
         train.carList.remove(position);
     }
 
     @Override
-    public boolean comprobacionIdUnico(Train train){
+    public boolean comprobacionIdUnico(Train_21254766_AninatNorambuena train){
         for (int i = 0; i < train.carList.size(); i++) {
             for (int j = i + 1; j < train.carList.size(); j++) {
                 if (train.carList.get(i).getId() == train.carList.get(j).getId()) {
@@ -81,7 +81,7 @@ public class Train implements ITrain{
     }
 
     @Override
-    public boolean comprobacionMismoModelo(Train train){
+    public boolean comprobacionMismoModelo(Train_21254766_AninatNorambuena train){
         for (int i = 0; i < train.carList.size(); i++) {
             for (int j = i + 1; j < train.carList.size(); j++) {
                 if (!train.carList.get(i).getModel().equals(train.carList.get(j).getModel())) {
@@ -93,7 +93,7 @@ public class Train implements ITrain{
     }
 
     @Override
-    public boolean comprobacionMismoFabricante(Train train){
+    public boolean comprobacionMismoFabricante(Train_21254766_AninatNorambuena train){
         String fabricante = train.getTrainMaker();
         for (int i = 0; i < train.carList.size(); i++) {
             if (!train.carList.get(i).getTrainMaker().equals(fabricante)) {
@@ -104,7 +104,7 @@ public class Train implements ITrain{
     }
 
     @Override
-    public boolean comprobacionExtremosValidos(Train train){
+    public boolean comprobacionExtremosValidos(Train_21254766_AninatNorambuena train){
         if (!((train.carList.get(0).getCarType().equals(train.carList.get(train.carList.size() - 1).getCarType()))
                 &&  (train.carList.get(0).getCarType().equals("tr")))) {
             return false;
@@ -113,7 +113,7 @@ public class Train implements ITrain{
     }
 
     @Override
-    public boolean comprobacionCentroValido(Train train){
+    public boolean comprobacionCentroValido(Train_21254766_AninatNorambuena train){
         for (int i = 1; i < train.carList.size() - 2; i++) {
             if (train.carList.get(i).getCarType().equals("tr")) {
                 return false;
@@ -123,7 +123,7 @@ public class Train implements ITrain{
     }
 
     @Override
-    public boolean estructuraValida(Train train){
+    public boolean estructuraValida(Train_21254766_AninatNorambuena train){
         if (!comprobacionExtremosValidos(train)) {
             return false;
         } else if (!comprobacionCentroValido(train)){
@@ -133,7 +133,7 @@ public class Train implements ITrain{
     }
 
     @Override
-    public boolean isTrain(Train train){
+    public boolean isTrain(Train_21254766_AninatNorambuena train){
         try {
             if (train.speed <= 0) {
                 throw new IllegalArgumentException
@@ -167,7 +167,7 @@ public class Train implements ITrain{
     @Override
     public int fetchCapacity(){
         int capacity = 0;
-        for (PassengerCar car : carList) {
+        for (PassengerCar_21254766_AninatNorambuena car : carList) {
             capacity += car.getPassengerCapacity();
         }
         return capacity;
@@ -175,7 +175,7 @@ public class Train implements ITrain{
 
     @Override
     public String toString(){
-        String carDetails = carList.stream().map(PassengerCar::toString).collect(Collectors.joining(", "));
+        String carDetails = carList.stream().map(PassengerCar_21254766_AninatNorambuena::toString).collect(Collectors.joining(", "));
         return "Datos del tren\n" +
                 "id = " + id + "\n" +
                 "fabricante = " + trainMaker + "\n" +

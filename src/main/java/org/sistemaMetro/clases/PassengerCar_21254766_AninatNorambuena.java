@@ -1,9 +1,8 @@
 package org.sistemaMetro.clases;
 
-import java.util.ArrayList;
-import org.sistemaMetro.Interfaces.IPassengerCar;
+import org.sistemaMetro.Interfaces.IPassengerCar_21254766_AninatNorambuena;
 
-public class PassengerCar implements IPassengerCar{
+public class PassengerCar_21254766_AninatNorambuena implements IPassengerCar_21254766_AninatNorambuena {
     private final int id;
     private final int passengerCapacity;
     private final String model;
@@ -11,7 +10,7 @@ public class PassengerCar implements IPassengerCar{
     private final String carType;
 
     // Constructor
-    public PassengerCar(int id, int passengerCapacity, String model, String trainMaker, String carType) {
+    public PassengerCar_21254766_AninatNorambuena(int id, int passengerCapacity, String model, String trainMaker, String carType) {
         if (passengerCapacity <= 0) {
             throw new IllegalArgumentException
                     ("La capacidad de pasajeros debe ser un número positivo");

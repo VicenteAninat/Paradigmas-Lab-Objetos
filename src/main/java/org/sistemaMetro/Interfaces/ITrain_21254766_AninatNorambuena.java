@@ -1,11 +1,11 @@
 package org.sistemaMetro.Interfaces;
 
-import org.sistemaMetro.clases.Train;
-import org.sistemaMetro.clases.PassengerCar;
+import org.sistemaMetro.clases.Train_21254766_AninatNorambuena;
+import org.sistemaMetro.clases.PassengerCar_21254766_AninatNorambuena;
 
 import java.util.ArrayList;
 
-public interface ITrain {
+public interface ITrain_21254766_AninatNorambuena {
     /**
      * Obtiene el id del tren
      *
@@ -39,7 +39,7 @@ public interface ITrain {
      *
      * @return Lista de carros
      */
-    ArrayList<PassengerCar> getCarList();
+    ArrayList<PassengerCar_21254766_AninatNorambuena> getCarList();
 
     /**
      * Añade un carro a un tren en una posición específica
@@ -47,7 +47,7 @@ public interface ITrain {
      * @param carro que se añadirá
      * @param position posición en la que se añadirá el carro
      */
-    void addCar(PassengerCar carro, int position);
+    void addCar(PassengerCar_21254766_AninatNorambuena carro, int position);
 
     /**
      * Remueve un carro de un tren en una posición específica
@@ -55,7 +55,7 @@ public interface ITrain {
      * @param train al que se le removerá el carro
      * @param position posición en la que se removerá el carro
      */
-    void removeCar(Train train, int position);
+    void removeCar(Train_21254766_AninatNorambuena train, int position);
 
 
     /**
@@ -64,7 +64,7 @@ public interface ITrain {
      * @param train tren que se quiere verificar
      * @return boolean si el id es único
      */
-    boolean comprobacionIdUnico(Train train);
+    boolean comprobacionIdUnico(Train_21254766_AninatNorambuena train);
 
     /**
      * Comprueba si los modelos de los carros de un tren son iguales
@@ -72,7 +72,7 @@ public interface ITrain {
      * @param train tren que se quiere verificar
      * @return boolean si los modelos son únicos
      */
-    boolean comprobacionMismoModelo(Train train);
+    boolean comprobacionMismoModelo(Train_21254766_AninatNorambuena train);
 
     /**
      * Comprueba si los fabricantes de los carros de un tren son iguales
@@ -80,7 +80,7 @@ public interface ITrain {
      * @param train tren que se quiere verificar
      * @return boolean si los fabricantes son iguales
      */
-    boolean comprobacionMismoFabricante(Train train);
+    boolean comprobacionMismoFabricante(Train_21254766_AninatNorambuena train);
 
     /**
      * Comprueba si los extremos de un tren son terminales
@@ -88,7 +88,7 @@ public interface ITrain {
      * @param train tren que se quiere verificar
      * @return boolean si los extremos son válidos
      */
-    boolean comprobacionExtremosValidos(Train train);
+    boolean comprobacionExtremosValidos(Train_21254766_AninatNorambuena train);
 
     /**
      * Comprueba si los carros centrales de un tren son tipo centrales
@@ -96,7 +96,7 @@ public interface ITrain {
      * @param train tren que se quiere verificar
      * @return boolean si el centro es válido
      */
-    boolean comprobacionCentroValido(Train train);
+    boolean comprobacionCentroValido(Train_21254766_AninatNorambuena train);
 
     /**
      * Comprueba si la estructura de un tren es válida
@@ -104,7 +104,7 @@ public interface ITrain {
      * @param train tren que se quiere verificar
      * @return boolean si la estructura es válida
      */
-    boolean estructuraValida(Train train);
+    boolean estructuraValida(Train_21254766_AninatNorambuena train);
 
     /**
      * Verifica si un tren es válido
@@ -112,7 +112,7 @@ public interface ITrain {
      * @param train tren que se quiere verificar
      * @return boolean si es válido o no
      */
-    boolean isTrain(Train train);
+    boolean isTrain(Train_21254766_AninatNorambuena train);
 
     /**
      * Obtiene la capacidad de pasajeros de un tren
