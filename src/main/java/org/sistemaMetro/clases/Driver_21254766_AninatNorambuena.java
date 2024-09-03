@@ -7,7 +7,13 @@ public class Driver_21254766_AninatNorambuena implements IDriver_21254766_Aninat
     private final String name;
     private final String trainMaker;
 
-    // Constructor
+    /**
+     * Constructor
+     *
+     * @param id (int) id unico del conductor.
+     * @param name (String) Nombre del conductor.
+     * @param trainMaker (String) Tipo de trenes que puede conducir el conductor.
+     */
     public Driver_21254766_AninatNorambuena(int id, String name, String trainMaker){
         this.id = id;
         this.name = name;
@@ -31,6 +37,11 @@ public class Driver_21254766_AninatNorambuena implements IDriver_21254766_Aninat
     }
 
     // Métodos
+    /**
+     * Describe al conductor en formato texto
+     *
+     * @return String con la descripción del conductor
+     */
     @Override
     public String toString(){
         return "id:" + id + "\n" +

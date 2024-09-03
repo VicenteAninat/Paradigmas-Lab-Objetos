@@ -7,6 +7,11 @@ import java.util.ArrayList;
 
 public class Menu_21254766_AninatNorambuena {
 
+    /**
+     * Menu principal
+     *
+     * @param subway (Subway_21254766_AninatNorambuena) red de metro.
+     */
     public static void run(Subway_21254766_AninatNorambuena subway){
         Scanner entrada = new Scanner(System.in);
         boolean continuar = true;
@@ -35,6 +40,10 @@ public class Menu_21254766_AninatNorambuena {
         }
     }
 
+    /**
+     * Menu de metodos operables sobre la red de metro
+     * @param subway (Subway_21254766_AninatNorambuena) red de metro.
+     */
     public static void menuMetodos(Subway_21254766_AninatNorambuena subway) {
         Scanner entrada = new Scanner(System.in);
         boolean continuar = true;
@@ -226,6 +235,10 @@ public class Menu_21254766_AninatNorambuena {
         }
     }
 
+    /**
+     * Submenu de carga de datos
+     * @param subway (Subway_21254766_AninatNorambuena) red de metro.
+     */
     public static void menuDatos(Subway_21254766_AninatNorambuena subway) {
         Scanner entrada = new Scanner(System.in);
         boolean continuar = true;
@@ -266,6 +279,12 @@ public class Menu_21254766_AninatNorambuena {
         }
     }
 
+    /**
+     * Extrae los conductores desde un archivo
+     *
+     * @param direccion (String) direccion del archivo.
+     * @return (list.Driver_21254766_AninatNorambuena) lista de conductores.
+     */
     public static ArrayList<Driver_21254766_AninatNorambuena> extraerConductores(String direccion){
         try {
             File archivo = new File(direccion);
@@ -290,6 +309,12 @@ public class Menu_21254766_AninatNorambuena {
         }
     }
 
+    /**
+     * Extrae las lineas desde un archivo
+     *
+     * @param direccion (String) direccion del archivo.
+     * @return (list.Line_21254766_AninatNorambuena) lista de lineas.
+     */
     public static ArrayList<Line_21254766_AninatNorambuena> extraerLineas(String direccion){
         try {
                 File archivo = new File(direccion);
@@ -354,6 +379,12 @@ public class Menu_21254766_AninatNorambuena {
         }
     }
 
+    /**
+     * Extrae los trenes desde un archivo
+     *
+     * @param direccion (String) direccion del archivo.
+     * @return (list.Train_21254766_AninatNorambuena) lista de trenes.
+     */
     public static ArrayList<Train_21254766_AninatNorambuena> extraerTrenes(String direccion){
         try {
             File archivo = new File(direccion);

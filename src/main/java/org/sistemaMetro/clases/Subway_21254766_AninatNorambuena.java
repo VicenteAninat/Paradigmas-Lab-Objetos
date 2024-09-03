@@ -14,6 +14,12 @@ public class Subway_21254766_AninatNorambuena implements ISubway_21254766_Aninat
     private ArrayList<Driver_21254766_AninatNorambuena> drivers;
 
     // Constructor
+    /**
+     * Constructor
+     *
+     * @param id (int) id de la red de metro.
+     * @param name (String) Nombre de la red de metro.
+     */
     public Subway_21254766_AninatNorambuena(int id, String name){
         this.id = id;
         this.name = name;
@@ -35,21 +41,42 @@ public class Subway_21254766_AninatNorambuena implements ISubway_21254766_Aninat
         return drivers;
     }
 
+    // Métodos
+    /**
+     * subwayAddTrain agrega un tren a la red de metro.
+     *
+     * @param trainList (list.Train_21254766_AninatNorambuena) trenes a agregar.
+     */
     @Override
     public void subwayAddTrain (ArrayList<Train_21254766_AninatNorambuena> trainList){
         trains.addAll(trainList);
     }
 
+    /**
+     * subwayAddLine agrega una linea a la red de metro.
+     *
+     * @param lineList (list.Line_21254766_AninatNorambuena) linea o lineas a agregar.
+     */
     @Override
     public void subwayAddLine (ArrayList<Line_21254766_AninatNorambuena> lineList){
         lines.addAll(lineList);
     }
 
+    /**
+     * subwayAddDriver agrega un conductor a la red de metro.
+     *
+     * @param driverList (list.Driver_21254766_AninatNorambuena) conductores a agregar.
+     */
     @Override
     public void subwayAddDriver (ArrayList<Driver_21254766_AninatNorambuena> driverList){
         drivers.addAll(driverList);
     }
 
+    /**
+     * Describe la red de metro en formato texto
+     *
+     * @return String con la descripción de la red de metro
+     */
     @Override
     public String toString(){
         String trainDetails = trains.stream().map(Train_21254766_AninatNorambuena::toString).collect(Collectors.joining(", "));

@@ -4,43 +4,43 @@ public interface IPassengerCar_21254766_AninatNorambuena {
     /**
      * Obtiene el id del carro
      *
-     * @return int del id del carro
+     * @return (int)
      */
     int getId();
 
     /**
      * Obtiene la capacidad de pasajeros del carro
      *
-     * @return int de la capacidad de pasajeros del carro
+     * @return (int)
      */
     int getPassengerCapacity();
 
     /**
      * Obtiene el modelo del carro
      *
-     * @return String del modelo del carro
+     * @return (String)
      */
     String getModel();
 
     /**
      * Obtiene el fabricante del carro
      *
-     * @return String del fabricante del carro
+     * @return (String)
      */
     String getTrainMaker();
 
     /**
      * Obtiene el tipo de carro
      *
-     * @return CarType del tipo de carro
+     * @return (String)
      */
     String getCarType();
 
     /**
      * Valida el tipo de carro
      *
-     * @param carType tipo de carro
-     * @return true si el tipo de carro es válido, false en caso contrario
+     * @param carType (String) tipo de carro
+     * @return (boolean)
      */
     boolean validCType (String carType);
 }

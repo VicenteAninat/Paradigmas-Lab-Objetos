@@ -5,28 +5,28 @@ public interface ISection_21254766_AninatNorambuena {
     /**
      * Obtiene la primera estación de la sección
      *
-     * @return Station de la primera estación
+     * @return (Station_21254766_AninatNorambuena)
      */
     Station_21254766_AninatNorambuena getPoint1();
 
     /**
      * Obtiene la segunda estación de la sección
      *
-     * @return Station de la segunda estación
+     * @return (Station_21254766_AninatNorambuena)
      */
     Station_21254766_AninatNorambuena getPoint2();
 
     /**
      * Obtiene la distancia entre las dos estaciones
      *
-     * @return int de la distancia
+     * @return (int)
      */
     int getDistance();
 
     /**
      * Obtiene el costo de la sección
      *
-     * @return int del costo
+     * @return (int)
      */
     int getCost();
 }

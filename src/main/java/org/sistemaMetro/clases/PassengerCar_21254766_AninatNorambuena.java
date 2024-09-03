@@ -10,6 +10,15 @@ public class PassengerCar_21254766_AninatNorambuena implements IPassengerCar_212
     private final String carType;
 
     // Constructor
+    /**
+     * Constructor
+     *
+     * @param id (int) id del carro.
+     * @param passengerCapacity (int) Capacidad de pasajeros del carro.
+     * @param model (String) Modelo del carro.
+     * @param trainMaker (String) Fabricante del carro.
+     * @param carType (String) Tipo de carro.
+     */
     public PassengerCar_21254766_AninatNorambuena(int id, int passengerCapacity, String model, String trainMaker, String carType) {
         if (passengerCapacity <= 0) {
             throw new IllegalArgumentException
@@ -53,12 +62,23 @@ public class PassengerCar_21254766_AninatNorambuena implements IPassengerCar_212
     }
 
     // Métodos
+    /**
+     * Determina si el tipo de carro es válido
+     *
+     * @param carType (String) tipo de carro
+     * @return (boolean)
+     */
     @Override
     public boolean validCType (String carType){
         return carType.equals("ct") ||
                 carType.equals("tr");
     }
 
+    /**
+     * Describe al carro en formato texto
+     *
+     * @return String con la descripción del carro
+     */
     @Override
     public String toString(){
         return "\n" +

@@ -8,6 +8,14 @@ public class Station_21254766_AninatNorambuena implements IStation_21254766_Anin
     private final int stopTime;
 
     // Constructor
+    /**
+     * Constructor
+     *
+     * @param id (int) id unico de la estación.
+     * @param name (String) Nombre de la estación.
+     * @param type (String) Tipo de la estación.
+     * @param stopTime (int) Tiempo de detención en la estación.
+     */
     public Station_21254766_AninatNorambuena(int id, String name, String type, int stopTime) {
         if (stopTime <= 0) {
             throw new IllegalArgumentException
@@ -44,9 +52,15 @@ public class Station_21254766_AninatNorambuena implements IStation_21254766_Anin
         return stopTime;
     }
 
-    // Modificadores
+    // Modificadores (ninguno)
 
     // Métodos
+    /**
+     * Determina si el tipo de estación es válido
+     *
+     * @param stationType (String) tipo de estación
+     * @return (boolean)
+     */
     @Override
     public boolean validSType(String stationType){
         return stationType.equals("c") ||

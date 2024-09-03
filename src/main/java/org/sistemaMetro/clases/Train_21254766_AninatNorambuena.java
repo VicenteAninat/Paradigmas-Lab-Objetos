@@ -13,6 +13,15 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
     private ArrayList<PassengerCar_21254766_AninatNorambuena> carList;
 
     // Constructor
+    /**
+     * Constructor
+     *
+     * @param id (int) id del tren.
+     * @param trainMaker (String) Fabricante del tren.
+     * @param speed (int) Velocidad del tren.
+     * @param stationStaytime (int) Tiempo de detención en estación.
+     * @param carList (list.PassengerCar_21254766_AninatNorambuena) Lista de carros del tren.
+     */
     public Train_21254766_AninatNorambuena(int id, String trainMaker, int speed, int stationStaytime, ArrayList<PassengerCar_21254766_AninatNorambuena> carList) {
         if (speed <= 0) {
             throw new IllegalArgumentException
@@ -55,19 +64,35 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return carList;
     }
 
-    // Modificadores
-
     // Métodos
+    /**
+     * Agrega un carro al tren
+     *
+     * @param carro (PassengerCar_21254766_AninatNorambuena) Carro a agregar.
+     * @param position (int) Posición en la que se agregará el carro.
+     */
     @Override
     public void addCar(PassengerCar_21254766_AninatNorambuena carro, int position) {
         carList.add(position, carro);
     }
 
+    /**
+     * Remueve un carro del tren
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren del que se removerá el carro.
+     * @param position (int) Posición del carro a remover.
+     */
     @Override
     public void removeCar(Train_21254766_AninatNorambuena train, int position) {
         train.carList.remove(position);
     }
 
+    /**
+     * Comprueba que todos los carros en el tren tengan un id unico
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren a comprobar.
+     * @return (boolean
+     */
     @Override
     public boolean comprobacionIdUnico(Train_21254766_AninatNorambuena train){
         for (int i = 0; i < train.carList.size(); i++) {
@@ -80,6 +105,12 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return true;
     }
 
+    /**
+     * Comprueba que todos los carros en el tren tengan el mismo modelo
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren a comprobar.
+     * @return (boolean)
+     */
     @Override
     public boolean comprobacionMismoModelo(Train_21254766_AninatNorambuena train){
         for (int i = 0; i < train.carList.size(); i++) {
@@ -92,6 +123,12 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return true;
     }
 
+    /**
+     * Comprueba que todos los carros en el tren tengan el mismo fabricante
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren a comprobar.
+     * @return (boolean)
+     */
     @Override
     public boolean comprobacionMismoFabricante(Train_21254766_AninatNorambuena train){
         String fabricante = train.getTrainMaker();
@@ -103,6 +140,12 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return true;
     }
 
+    /**
+     * Comprueba que los extremos del tren sean terminales
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren a comprobar.
+     * @return (boolean)
+     */
     @Override
     public boolean comprobacionExtremosValidos(Train_21254766_AninatNorambuena train){
         if (!((train.carList.get(0).getCarType().equals(train.carList.get(train.carList.size() - 1).getCarType()))
@@ -112,6 +155,12 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return true;
     }
 
+    /**
+     * Comprueba que el centro del tren no tenga terminales
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren a comprobar.
+     * @return (boolean)
+     */
     @Override
     public boolean comprobacionCentroValido(Train_21254766_AninatNorambuena train){
         for (int i = 1; i < train.carList.size() - 2; i++) {
@@ -122,6 +171,12 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return true;
     }
 
+    /**
+     * Comprueba que la estructura del tren sea válida
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren a comprobar.
+     * @return (boolean)
+     */
     @Override
     public boolean estructuraValida(Train_21254766_AninatNorambuena train){
         if (!comprobacionExtremosValidos(train)) {
@@ -132,6 +187,12 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return true;
     }
 
+    /**
+     * Comprueba si un tren en toda su estructura es válido
+     *
+     * @param train (Train_21254766_AninatNorambuena) Tren a comprobar.
+     * @return (boolean)
+     */
     @Override
     public boolean isTrain(Train_21254766_AninatNorambuena train){
         try {
@@ -164,6 +225,11 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return true;
     }
 
+    /**
+     * Obtiene la capacidad total de pasajeros del tren
+     *
+     * @return (int)
+     */
     @Override
     public int fetchCapacity(){
         int capacity = 0;
@@ -173,6 +239,11 @@ public class Train_21254766_AninatNorambuena implements ITrain_21254766_AninatNo
         return capacity;
     }
 
+    /**
+     * Describe el tren en formato texto
+     *
+     * @return (String)
+     */
     @Override
     public String toString(){
         String carDetails = carList.stream().map(PassengerCar_21254766_AninatNorambuena::toString).collect(Collectors.joining(", "));

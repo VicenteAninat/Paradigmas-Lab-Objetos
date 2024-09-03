@@ -6,9 +6,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main_21254766_AninatNorambuena {
+    /**
+     * Método principal
+     *
+     * @param args (String[]) Argumentos de la línea de comandos
+     */
     public static void main(String[] args) {
         // Inicializacion
         Station_21254766_AninatNorambuena E1 = new Station_21254766_AninatNorambuena(1, "San Pablo", "c", 45);
